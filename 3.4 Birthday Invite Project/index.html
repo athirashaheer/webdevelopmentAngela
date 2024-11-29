@@ -1,0 +1,514 @@
+<?php include './includes/header.php'?>
+
+<div id="pageWrapper" class="cmnPage sidebarPage reportPage">
+
+    <section id="scope" class="report">
+        <div class="container">
+            <div class="titleBx">
+                <div class="icon">
+                    <img src="assets/images/logo.png" alt="">
+                </div>
+                <h2>GHG Emissions Calculator</h2>
+            </div>
+            <div class="cmnBx">
+                <div class="flx">
+                    <!-- <div class="lefBx">
+                        <div class="name">Hello john,</div>
+                        <div class="cmpny">ABC Company</div>
+                        <a href="javascript:void(0)" class="links">Logout</a>
+
+                    </div> -->
+                    <div class="rtsec">
+                        <button class="dshBtn">
+                            <div class="icon">
+                                <svg viewBox="0 0 24 24">
+                                    <path id="menu-left-alt"
+                                        d="m16 6.75h-13a.75.75 0 0 1 0-1.5h13a.75.75 0 0 1 0 1.5zm5.75 5.25a.75.75 0 0 0 -.75-.75h-18a.75.75 0 0 0 0 1.5h18a.75.75 0 0 0 .75-.75zm-9 6a.75.75 0 0 0 -.75-.75h-9a.75.75 0 0 0 0 1.5h9a.75.75 0 0 0 .75-.75z"
+                                        fill="rgb(0,0,0)"></path>
+                                </svg>
+                            </div>
+                            <span>Menu</span>
+                        </button>
+                        <div class="topBox">
+                            <div class="accordHead">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button qusetnBtn collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#dashBoarAccord1"
+                                        aria-expanded="false" aria-controls="dashBoarAccord1">
+                                        Qustionnaire
+                                    </button>
+                                </h2>
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button " type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#dashBoarAccord2" aria-expanded="true"
+                                        aria-controls="dashBoarAccord2">
+                                        Report
+                                    </button>
+                                </h2>
+
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed userBtn" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#dashBoarAccord3"
+                                        aria-expanded="false" aria-controls="dashBoarAccord3">
+                                        user
+                                    </button>
+                                </h2>
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#dashBoarAccord4" aria-expanded="false"
+                                        aria-controls="dashBoarAccord4">
+                                        settings
+                                    </button>
+                                </h2>
+                            </div>
+
+                        </div>
+                        <div class="accordion" id="dashBoarAccord">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#dashBoarAccord1" aria-expanded="false"
+                                        aria-controls="dashBoarAccord1">
+                                        Qustionnaire
+                                    </button>
+                                </h2>
+                                <div id="dashBoarAccord1" class="accordion-collapse collapse "
+                                    aria-labelledby="headingOne" data-bs-parent="#dashBoarAccord">
+                                    <div class="accordion-body ">
+
+                                        <div class="cmnBx">
+                                            <div class="mainTitle">1. Use of Sold Products</div>
+                                            <form action="javascript:void(0)">
+                                                <div class="row">
+                                                    <div class="col-lg-6">
+                                                        <label for="">Sold Goods *</label>
+                                                        <input type="text" class="form-control">
+
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <label for="">Average Usage Over Lifetime *</label>
+                                                        <input type="text" class="form-control">
+
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <label for="">Product Sales (Number of Products Sold) * </label>
+                                                        <input type="text" class="form-control">
+
+                                                    </div>
+
+                                                    <div class="col-lg-6">
+                                                        <label for="">Energy *</label>
+                                                        <input type="text" class="form-control">
+
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <label for="">Unit of Measurement *</label>
+                                                        <select name="" id="" class="form-control">
+                                                            <option value="">select</option>
+                                                        </select>
+                                                    </div>
+
+
+
+
+
+
+                                                </div>
+                                            </form>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#dashBoarAccord2" aria-expanded="true"
+                                        aria-controls="dashBoarAccord2">
+                                        Report
+                                    </button>
+                                </h2>
+                                <div id="dashBoarAccord2" class="accordion-collapse collapse show"
+                                    aria-labelledby="headingTwo" data-bs-parent="#dashBoarAccord">
+                                    <div class="accordion-body">
+                                        <div class="cmnBx">
+                                            <div class="row justify-content-center">
+                                                <div class="col-lg-6">
+                                                    <div class="cmnBx">
+                                                        <div class="mainTitle center">Scope1</div>
+                                                        <canvas class="myChart"></canvas>
+                                                        <table>
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>
+                                                                        scope1
+                                                                    </th>
+                                                                    <th>
+                                                                        Values
+                                                                    </th>
+                                                                    <th>
+                                                                        Units
+                                                                    </th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>
+                                                                        Stationary Combustion
+                                                                    </td>
+                                                                    <td>
+                                                                        1476
+                                                                    </td>
+                                                                    <td>
+                                                                        tCO2e
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        Stationary Combustion
+                                                                    </td>
+                                                                    <td>
+                                                                        1476
+                                                                    </td>
+                                                                    <td>
+                                                                        tCO2e
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        Stationary Combustion
+                                                                    </td>
+                                                                    <td>
+                                                                        1476
+                                                                    </td>
+                                                                    <td>
+                                                                        tCO2e
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        Stationary Combustion
+                                                                    </td>
+                                                                    <td>
+                                                                        1476
+                                                                    </td>
+                                                                    <td>
+                                                                        tCO2e
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="cmnBx">
+                                                        <div class="mainTitle center">Scope1</div>
+                                                        <canvas class="myChart"></canvas>
+                                                        <table>
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>
+                                                                        scope1
+                                                                    </th>
+                                                                    <th>
+                                                                        Values
+                                                                    </th>
+                                                                    <th>
+                                                                        Units
+                                                                    </th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>
+                                                                        Stationary Combustion
+                                                                    </td>
+                                                                    <td>
+                                                                        1476
+                                                                    </td>
+                                                                    <td>
+                                                                        tCO2e
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        Stationary Combustion
+                                                                    </td>
+                                                                    <td>
+                                                                        1476
+                                                                    </td>
+                                                                    <td>
+                                                                        tCO2e
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        Stationary Combustion
+                                                                    </td>
+                                                                    <td>
+                                                                        1476
+                                                                    </td>
+                                                                    <td>
+                                                                        tCO2e
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        Stationary Combustion
+                                                                    </td>
+                                                                    <td>
+                                                                        1476
+                                                                    </td>
+                                                                    <td>
+                                                                        tCO2e
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6
+                                                ">
+                                                    <div class="cmnBx">
+                                                        <div class="mainTitle center">Scope1</div>
+                                                        <canvas class="myChart"></canvas>
+                                                        <table>
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>
+                                                                        scope1
+                                                                    </th>
+                                                                    <th>
+                                                                        Values
+                                                                    </th>
+                                                                    <th>
+                                                                        Units
+                                                                    </th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>
+                                                                        Stationary Combustion
+                                                                    </td>
+                                                                    <td>
+                                                                        1476
+                                                                    </td>
+                                                                    <td>
+                                                                        tCO2e
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        Stationary Combustion
+                                                                    </td>
+                                                                    <td>
+                                                                        1476
+                                                                    </td>
+                                                                    <td>
+                                                                        tCO2e
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        Stationary Combustion
+                                                                    </td>
+                                                                    <td>
+                                                                        1476
+                                                                    </td>
+                                                                    <td>
+                                                                        tCO2e
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        Stationary Combustion
+                                                                    </td>
+                                                                    <td>
+                                                                        1476
+                                                                    </td>
+                                                                    <td>
+                                                                        tCO2e
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#dashBoarAccord3" aria-expanded="false"
+                                        aria-controls="dashBoarAccord3">
+                                        User
+                                    </button>
+                                </h2>
+                                <div id="dashBoarAccord3" class="accordion-collapse collapse"
+                                    aria-labelledby="headingThree" data-bs-parent="#dashBoarAccord">
+                                    <div class="accordion-body">
+                                        <div class="  cmnBx userList">
+                                            <div class="mainTitle">List of all users in your organisation</div>
+                                            <table>
+                                                <tr>
+                                                    <td>Vijay</td>
+                                                    <td>employee <a href="javascript:void(0)">change Role</a></td>
+                                                    <td>Authenticated <a href="javascript:void(0)">de-authenticate</a>
+                                                        <a href="javascript:void(0)">delete user</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Vijay</td>
+                                                    <td>employee <a href="javascript:void(0)">change Role</a></td>
+                                                    <td>Authenticated <a href="javascript:void(0)">de-authenticate</a>
+                                                        <a href="javascript:void(0)">delete user</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Vijay</td>
+                                                    <td>employee <a href="javascript:void(0)">change Role</a></td>
+                                                    <td>Authenticated <a href="javascript:void(0)">de-authenticate</a>
+                                                        <a href="javascript:void(0)">delete user</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Vijay</td>
+                                                    <td>employee <a href="javascript:void(0)">change Role</a></td>
+                                                    <td>Authenticated <a href="javascript:void(0)">de-authenticate</a>
+                                                        <a href="javascript:void(0)">delete user</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Vijay</td>
+                                                    <td>employee <a href="javascript:void(0)">change Role</a></td>
+                                                    <td>Authenticated <a href="javascript:void(0)">de-authenticate</a>
+                                                        <a href="javascript:void(0)">delete user</a>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <div class="cmnBx mt-4 newUser">
+                                            <div class="mainTitle">Add a new user to your organisation</div>
+                                            <div class="row  ">
+
+                                                <div class="col-lg-6">
+                                                    <label for="">Name</label>
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <label for="">Role</label>
+                                                    <select name="" id="" class="form-control">
+                                                        <option value="">select</option>
+                                                    </select>
+                                                </div>
+
+                                                <div class="col-lg-12">
+                                                    <label for="">Department</label>
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                                <div class="col-lg-12">
+                                                    <div class="rtsertBxc">
+                                                        <div class="item">
+                                                            <a href="javascript:void(0)"
+                                                                class="cmnbtn hoveranim"><span>Edit</span></a>
+                                                        </div>
+                                                        <div class="item">
+                                                            <a href="javascript:void(0)"
+                                                                class="cmnbtn hoveranim"><span>Remove</span></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#dashBoarAccord4" aria-expanded="false"
+                                        aria-controls="dashBoarAccord4">
+                                        Settings
+                                    </button>
+                                </h2>
+                                <div id="dashBoarAccord4" class="accordion-collapse collapse"
+                                    aria-labelledby="headingThree" data-bs-parent="#dashBoarAccord">
+                                    <div class="accordion-body">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.2.2/Chart.min.js"></script>
+    <script>
+        var ctx1 = document.getElementsByClassName("myChart")[0].getContext('2d');
+        var ctx2 = document.getElementsByClassName("myChart")[1].getContext('2d');
+        var ctx3 = document.getElementsByClassName("myChart")[2].getContext('2d');
+
+        var myChart1 = new Chart(ctx1, {
+            type: 'pie',
+            data: {
+                labels: ["Refrigrants", "  Stationary Combustion", "  Mobile Combustion"],
+                datasets: [{
+                    backgroundColor: [
+                        "#18293D",
+                        "#2EE52B",
+                        "#CED4D2",
+                    ],
+                    data: [33.3, 33.3, 33.3]
+                }]
+            }
+        });
+
+        var myChart2 = new Chart(ctx2, {
+            type: 'pie',
+            data: {
+                labels: ["Refrigrants", "  Stationary Combustion", "  Mobile Combustion"],
+                datasets: [{
+                    backgroundColor: [
+                        "#18293D",
+                        "#2EE52B",
+                        "#CED4D2",
+                    ],
+                    data: [33.3, 33.3, 33.3]
+                }]
+            }
+        });
+
+        var myChart3 = new Chart(ctx3, {
+            type: 'pie',
+            data: {
+                labels: ["Refrigrants", "  Stationary Combustion", "  Mobile Combustion", "Refrigrants",
+                    "  Stationary Combustion", "  Mobile Combustion"
+                ],
+                datasets: [{
+                    backgroundColor: [
+                        "#18293D",
+                        "#2EE52B",
+                        "#CED4D2",
+                        "#18293D",
+                        "#2EE52B",
+                        "#CED4D2",
+                    ],
+                    data: [10, 10, 10, 10, 10, 10, 10, 10, 10, 10]
+                }]
+            }
+        });
+    </script>
+</div>
+
+<?php include './includes/footer.php'?>
