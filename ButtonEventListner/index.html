@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Keydown Event Listener</title>
+</head>
+
+<body>
+    <input type="text" id="myInput" placeholder="Type something...">
+
+    <script>
+        var input = document.getElementById("myInput");
+        input.addEventListener("keydown", function (event) {
+            alert("Key pressed: " + event.key);
+        });
+    </script>
+</body>
+
+</html>

@@ -1,514 +1,1284 @@
-<?php include './includes/header.php'?>
+<div class="accordion-item">
+  <h2 class="accordion-header">
+    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#reportAccord1"
+      aria-expanded="true" aria-controls="reportAccord1">
+     Operational sites owned, leased, managed in, or adjacent to, protected areas and areas of high biodiversity value outside protected areas
 
-<div id="pageWrapper" class="cmnPage sidebarPage reportPage">
+    </button>
+  </h2>
+  <div id="reportAccord1" class="accordion-collapse collapse  show" data-bs-parent="#reportAccord">
+    <div class="accordion-body">
 
-    <section id="scope" class="report">
-        <div class="container">
-            <div class="titleBx">
-                <div class="icon">
-                    <img src="assets/images/logo.png" alt="">
-                </div>
-                <h2>GHG Emissions Calculator</h2>
-            </div>
+      <div class="accordion" id="biodiversityInnerAccord">
+        <div class="accordion-item cmnBx mb-0">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+              data-bs-target="#biodiversityInnerAccord1" aria-expanded="true" aria-controls="biodiversityInnerAccord1">
+              <p class="mb-0">For each operational site owned, leased, managed in, or adjacent to, protected areas and areas of high biodiversity value outside protected areas, the following information:
+                <br>
+                1.Geographic location			
+              </p>
+            </button>
+          </h2>
+          <div id="biodiversityInnerAccord1" class="accordion-collapse collapse show" data-bs-parent="#biodiversityInnerAccord">
             <div class="cmnBx">
-                <div class="flx">
-                    <!-- <div class="lefBx">
-                        <div class="name">Hello john,</div>
-                        <div class="cmpny">ABC Company</div>
-                        <a href="javascript:void(0)" class="links">Logout</a>
 
-                    </div> -->
-                    <div class="rtsec">
-                        <button class="dshBtn">
-                            <div class="icon">
-                                <svg viewBox="0 0 24 24">
-                                    <path id="menu-left-alt"
-                                        d="m16 6.75h-13a.75.75 0 0 1 0-1.5h13a.75.75 0 0 1 0 1.5zm5.75 5.25a.75.75 0 0 0 -.75-.75h-18a.75.75 0 0 0 0 1.5h18a.75.75 0 0 0 .75-.75zm-9 6a.75.75 0 0 0 -.75-.75h-9a.75.75 0 0 0 0 1.5h9a.75.75 0 0 0 .75-.75z"
-                                        fill="rgb(0,0,0)"></path>
-                                </svg>
-                            </div>
-                            <span>Menu</span>
-                        </button>
-                        <div class="topBox">
-                            <div class="accordHead">
-                                <h2 class="accordion-header" id="headingOne">
-                                    <button class="accordion-button qusetnBtn collapsed" type="button"
-                                        data-bs-toggle="collapse" data-bs-target="#dashBoarAccord1"
-                                        aria-expanded="false" aria-controls="dashBoarAccord1">
-                                        Qustionnaire
-                                    </button>
-                                </h2>
-                                <h2 class="accordion-header" id="headingTwo">
-                                    <button class="accordion-button " type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#dashBoarAccord2" aria-expanded="true"
-                                        aria-controls="dashBoarAccord2">
-                                        Report
-                                    </button>
-                                </h2>
+              <form action="javascript:void(0)" method="post">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="formgroup">
+                       <input type="text" class="form-control" placeholder="Enter Your Response">
+                      
+                      <a href="" class="guideBxx" data-bs-toggle="modal"
+                                                            data-bs-target="#gidanceModal1">
+                                                            Guidance
+                                                            <div class="icon">
+                                                                <svg width="12" height="12" viewBox="0 0 12 12"
+                                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path
+                                                                        d="M6.58267 6.40568C6.59428 6.3979 6.61088 6.38868 6.63484 6.3776C6.71676 6.3397 6.7928 6.3189 6.90734 6.28755C6.97228 6.26978 7.0496 6.24861 7.1474 6.21903C7.36634 6.1528 7.68242 6.04117 7.93405 5.78126C8.20607 5.5003 8.33267 5.12405 8.33267 4.6713L8.33268 4.6655C8.33275 4.53031 8.33304 4.00145 8.03225 3.49456C7.69595 2.92783 7.0546 2.5 5.99934 2.5C5.4707 2.5 5.03512 2.62096 4.68569 2.83234C4.33733 3.04308 4.1069 3.32409 3.95719 3.5958C3.80929 3.86419 3.73807 4.1266 3.70295 4.3178C3.68516 4.41463 3.67599 4.49679 3.67122 4.55729C3.66884 4.58764 3.66753 4.61284 3.66683 4.63205C3.66648 4.64166 3.66627 4.64981 3.66615 4.65637L3.66604 4.66504L3.66601 4.66848L3.66601 4.66996L3.66601 4.67065L3.66602 4.6713C3.66602 4.99346 3.92717 5.25463 4.24934 5.25463C4.56974 5.25463 4.8298 4.99632 4.83265 4.6766L4.83266 4.67525C4.83281 4.6712 4.83326 4.66191 4.83429 4.64884C4.83637 4.6225 4.84086 4.5806 4.85042 4.52856C4.86999 4.42201 4.90814 4.28743 4.979 4.15883C5.04803 4.03355 5.14573 3.91757 5.28956 3.83057C5.43231 3.74421 5.65298 3.66667 5.99934 3.66667C6.69408 3.66667 6.92773 3.91939 7.02893 4.08993C7.16115 4.31274 7.16601 4.56962 7.16601 4.6713C7.16601 4.89737 7.10945 4.95573 7.09616 4.96945C7.06306 5.00364 6.99342 5.04673 6.80958 5.10234C6.77957 5.11142 6.74064 5.12213 6.69577 5.13448C6.54248 5.17665 6.31968 5.23795 6.14505 5.31873C5.87182 5.44511 5.58068 5.66724 5.44549 6.07615C5.42596 6.13522 5.41601 6.19704 5.41601 6.25926L5.41602 6.729C5.41602 7.05117 5.67718 7.3125 5.99935 7.3125C6.32152 7.3125 6.58268 7.05133 6.58268 6.72916L6.58267 6.40568Z"
+                                                                        fill="#8B8B8B" />
+                                                                    <path
+                                                                        d="M5.99935 9.5C6.32152 9.5 6.58268 9.23883 6.58268 8.91667C6.58268 8.5945 6.32152 8.33333 5.99935 8.33333C5.67718 8.33333 5.41602 8.5945 5.41602 8.91667C5.41602 9.23883 5.67718 9.5 5.99935 9.5Z"
+                                                                        fill="#8B8B8B" />
+                                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                        d="M5.99935 11.8333C9.22101 11.8333 11.8327 9.22166 11.8327 6C11.8327 2.77834 9.22101 0.166667 5.99935 0.166667C2.77769 0.166667 0.166016 2.77834 0.166016 6C0.166016 9.22166 2.77769 11.8333 5.99935 11.8333ZM5.99935 10.6667C8.57668 10.6667 10.666 8.57733 10.666 6C10.666 3.42267 8.57668 1.33333 5.99935 1.33333C3.42202 1.33333 1.33268 3.42267 1.33268 6C1.33268 8.57733 3.42202 10.6667 5.99935 10.6667Z"
+                                                                        fill="#8B8B8B" />
+                                                                </svg>
 
-                                <h2 class="accordion-header" id="headingThree">
-                                    <button class="accordion-button collapsed userBtn" type="button"
-                                        data-bs-toggle="collapse" data-bs-target="#dashBoarAccord3"
-                                        aria-expanded="false" aria-controls="dashBoarAccord3">
-                                        user
-                                    </button>
-                                </h2>
-                                <h2 class="accordion-header" id="headingThree">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#dashBoarAccord4" aria-expanded="false"
-                                        aria-controls="dashBoarAccord4">
-                                        settings
-                                    </button>
-                                </h2>
-                            </div>
-
-                        </div>
-                        <div class="accordion" id="dashBoarAccord">
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingOne">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#dashBoarAccord1" aria-expanded="false"
-                                        aria-controls="dashBoarAccord1">
-                                        Qustionnaire
-                                    </button>
-                                </h2>
-                                <div id="dashBoarAccord1" class="accordion-collapse collapse "
-                                    aria-labelledby="headingOne" data-bs-parent="#dashBoarAccord">
-                                    <div class="accordion-body ">
-
-                                        <div class="cmnBx">
-                                            <div class="mainTitle">1. Use of Sold Products</div>
-                                            <form action="javascript:void(0)">
-                                                <div class="row">
-                                                    <div class="col-lg-6">
-                                                        <label for="">Sold Goods *</label>
-                                                        <input type="text" class="form-control">
-
-                                                    </div>
-                                                    <div class="col-lg-6">
-                                                        <label for="">Average Usage Over Lifetime *</label>
-                                                        <input type="text" class="form-control">
-
-                                                    </div>
-                                                    <div class="col-lg-6">
-                                                        <label for="">Product Sales (Number of Products Sold) * </label>
-                                                        <input type="text" class="form-control">
-
-                                                    </div>
-
-                                                    <div class="col-lg-6">
-                                                        <label for="">Energy *</label>
-                                                        <input type="text" class="form-control">
-
-                                                    </div>
-                                                    <div class="col-lg-6">
-                                                        <label for="">Unit of Measurement *</label>
-                                                        <select name="" id="" class="form-control">
-                                                            <option value="">select</option>
-                                                        </select>
-                                                    </div>
-
-
-
-
-
-
-                                                </div>
-                                            </form>
-
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingTwo">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#dashBoarAccord2" aria-expanded="true"
-                                        aria-controls="dashBoarAccord2">
-                                        Report
-                                    </button>
-                                </h2>
-                                <div id="dashBoarAccord2" class="accordion-collapse collapse show"
-                                    aria-labelledby="headingTwo" data-bs-parent="#dashBoarAccord">
-                                    <div class="accordion-body">
-                                        <div class="cmnBx">
-                                            <div class="row justify-content-center">
-                                                <div class="col-lg-6">
-                                                    <div class="cmnBx">
-                                                        <div class="mainTitle center">Scope1</div>
-                                                        <canvas class="myChart"></canvas>
-                                                        <table>
-                                                            <thead>
-                                                                <tr>
-                                                                    <th>
-                                                                        scope1
-                                                                    </th>
-                                                                    <th>
-                                                                        Values
-                                                                    </th>
-                                                                    <th>
-                                                                        Units
-                                                                    </th>
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td>
-                                                                        Stationary Combustion
-                                                                    </td>
-                                                                    <td>
-                                                                        1476
-                                                                    </td>
-                                                                    <td>
-                                                                        tCO2e
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>
-                                                                        Stationary Combustion
-                                                                    </td>
-                                                                    <td>
-                                                                        1476
-                                                                    </td>
-                                                                    <td>
-                                                                        tCO2e
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>
-                                                                        Stationary Combustion
-                                                                    </td>
-                                                                    <td>
-                                                                        1476
-                                                                    </td>
-                                                                    <td>
-                                                                        tCO2e
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>
-                                                                        Stationary Combustion
-                                                                    </td>
-                                                                    <td>
-                                                                        1476
-                                                                    </td>
-                                                                    <td>
-                                                                        tCO2e
-                                                                    </td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-6">
-                                                    <div class="cmnBx">
-                                                        <div class="mainTitle center">Scope1</div>
-                                                        <canvas class="myChart"></canvas>
-                                                        <table>
-                                                            <thead>
-                                                                <tr>
-                                                                    <th>
-                                                                        scope1
-                                                                    </th>
-                                                                    <th>
-                                                                        Values
-                                                                    </th>
-                                                                    <th>
-                                                                        Units
-                                                                    </th>
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td>
-                                                                        Stationary Combustion
-                                                                    </td>
-                                                                    <td>
-                                                                        1476
-                                                                    </td>
-                                                                    <td>
-                                                                        tCO2e
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>
-                                                                        Stationary Combustion
-                                                                    </td>
-                                                                    <td>
-                                                                        1476
-                                                                    </td>
-                                                                    <td>
-                                                                        tCO2e
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>
-                                                                        Stationary Combustion
-                                                                    </td>
-                                                                    <td>
-                                                                        1476
-                                                                    </td>
-                                                                    <td>
-                                                                        tCO2e
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>
-                                                                        Stationary Combustion
-                                                                    </td>
-                                                                    <td>
-                                                                        1476
-                                                                    </td>
-                                                                    <td>
-                                                                        tCO2e
-                                                                    </td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-6
-                                                ">
-                                                    <div class="cmnBx">
-                                                        <div class="mainTitle center">Scope1</div>
-                                                        <canvas class="myChart"></canvas>
-                                                        <table>
-                                                            <thead>
-                                                                <tr>
-                                                                    <th>
-                                                                        scope1
-                                                                    </th>
-                                                                    <th>
-                                                                        Values
-                                                                    </th>
-                                                                    <th>
-                                                                        Units
-                                                                    </th>
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td>
-                                                                        Stationary Combustion
-                                                                    </td>
-                                                                    <td>
-                                                                        1476
-                                                                    </td>
-                                                                    <td>
-                                                                        tCO2e
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>
-                                                                        Stationary Combustion
-                                                                    </td>
-                                                                    <td>
-                                                                        1476
-                                                                    </td>
-                                                                    <td>
-                                                                        tCO2e
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>
-                                                                        Stationary Combustion
-                                                                    </td>
-                                                                    <td>
-                                                                        1476
-                                                                    </td>
-                                                                    <td>
-                                                                        tCO2e
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>
-                                                                        Stationary Combustion
-                                                                    </td>
-                                                                    <td>
-                                                                        1476
-                                                                    </td>
-                                                                    <td>
-                                                                        tCO2e
-                                                                    </td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingThree">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#dashBoarAccord3" aria-expanded="false"
-                                        aria-controls="dashBoarAccord3">
-                                        User
-                                    </button>
-                                </h2>
-                                <div id="dashBoarAccord3" class="accordion-collapse collapse"
-                                    aria-labelledby="headingThree" data-bs-parent="#dashBoarAccord">
-                                    <div class="accordion-body">
-                                        <div class="  cmnBx userList">
-                                            <div class="mainTitle">List of all users in your organisation</div>
-                                            <table>
-                                                <tr>
-                                                    <td>Vijay</td>
-                                                    <td>employee <a href="javascript:void(0)">change Role</a></td>
-                                                    <td>Authenticated <a href="javascript:void(0)">de-authenticate</a>
-                                                        <a href="javascript:void(0)">delete user</a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Vijay</td>
-                                                    <td>employee <a href="javascript:void(0)">change Role</a></td>
-                                                    <td>Authenticated <a href="javascript:void(0)">de-authenticate</a>
-                                                        <a href="javascript:void(0)">delete user</a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Vijay</td>
-                                                    <td>employee <a href="javascript:void(0)">change Role</a></td>
-                                                    <td>Authenticated <a href="javascript:void(0)">de-authenticate</a>
-                                                        <a href="javascript:void(0)">delete user</a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Vijay</td>
-                                                    <td>employee <a href="javascript:void(0)">change Role</a></td>
-                                                    <td>Authenticated <a href="javascript:void(0)">de-authenticate</a>
-                                                        <a href="javascript:void(0)">delete user</a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Vijay</td>
-                                                    <td>employee <a href="javascript:void(0)">change Role</a></td>
-                                                    <td>Authenticated <a href="javascript:void(0)">de-authenticate</a>
-                                                        <a href="javascript:void(0)">delete user</a>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </div>
-                                        <div class="cmnBx mt-4 newUser">
-                                            <div class="mainTitle">Add a new user to your organisation</div>
-                                            <div class="row  ">
-
-                                                <div class="col-lg-6">
-                                                    <label for="">Name</label>
-                                                    <input type="text" class="form-control">
-                                                </div>
-                                                <div class="col-lg-6">
-                                                    <label for="">Role</label>
-                                                    <select name="" id="" class="form-control">
-                                                        <option value="">select</option>
-                                                    </select>
-                                                </div>
-
-                                                <div class="col-lg-12">
-                                                    <label for="">Department</label>
-                                                    <input type="text" class="form-control">
-                                                </div>
-                                                <div class="col-lg-12">
-                                                    <div class="rtsertBxc">
-                                                        <div class="item">
-                                                            <a href="javascript:void(0)"
-                                                                class="cmnbtn hoveranim"><span>Edit</span></a>
-                                                        </div>
-                                                        <div class="item">
-                                                            <a href="javascript:void(0)"
-                                                                class="cmnbtn hoveranim"><span>Remove</span></a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingThree">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#dashBoarAccord4" aria-expanded="false"
-                                        aria-controls="dashBoarAccord4">
-                                        Settings
-                                    </button>
-                                </h2>
-                                <div id="dashBoarAccord4" class="accordion-collapse collapse"
-                                    aria-labelledby="headingThree" data-bs-parent="#dashBoarAccord">
-                                    <div class="accordion-body">
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                                                            </div>
+                      </a>
                     </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="fileUpload">
+                      <label for="legal_file" class="upload-label" style="cursor: pointer;">
+                        Select File here
+                      </label>
+                      <p class="file-support-text">Files Supported: PDF, TEXT, DOC, DOCX, JPEG, PNG</p>
+                      <input type="file" multiple class="form-control multi-file-upload-input" id="legal_file"
+                        name="legal_file[]" data-file-list-id="file-list-1">
+                      <small id="file_error" style="color: red;"></small>
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="btnsec">
+                      <div class="item">
+                        <a href="javascript:void(0)" class="cmnbtn hoveranim">
+                          <span>cancel</span>
+                        </a>
+                      </div>
+                      <div class="item">
+                      
+                         <button type="button" class="cmnbtn hoveranim save-organization-reporting-process5"
+                          data-bs-toggle="collapse" data-bs-target="#biodiversityInnerAccord2"
+                          aria-expanded="false" aria-controls="biodiversityInnerAccord2">
+                          <span>save & continue</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
                 </div>
+              </form>
             </div>
+          </div>
         </div>
-    </section>
+        <div class="accordion-item cmnBx mb-0">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#biodiversityInnerAccord2" aria-expanded="false" aria-controls="biodiversityInnerAccord2">
+              <p class="mb-0">2.Subsurface and underground land that may be owned, leased, or managed by the organization			
+              </p>
+            </button>
+          </h2>
+          <div id="biodiversityInnerAccord2" class="accordion-collapse collapse" data-bs-parent="#biodiversityInnerAccord">
+            <div class="cmnBx">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.2.2/Chart.min.js"></script>
-    <script>
-        var ctx1 = document.getElementsByClassName("myChart")[0].getContext('2d');
-        var ctx2 = document.getElementsByClassName("myChart")[1].getContext('2d');
-        var ctx3 = document.getElementsByClassName("myChart")[2].getContext('2d');
+              <form action="javascript:void(0)" method="post">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="formgroup">
+                       <input type="text" class="form-control" placeholder="Enter Your Response">
+                      <a href="" class="guideBxx" data-bs-toggle="modal"
+                                                            data-bs-target="#gidanceModal1">
+                                                            Guidance
+                                                            <div class="icon">
+                                                                <svg width="12" height="12" viewBox="0 0 12 12"
+                                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path
+                                                                        d="M6.58267 6.40568C6.59428 6.3979 6.61088 6.38868 6.63484 6.3776C6.71676 6.3397 6.7928 6.3189 6.90734 6.28755C6.97228 6.26978 7.0496 6.24861 7.1474 6.21903C7.36634 6.1528 7.68242 6.04117 7.93405 5.78126C8.20607 5.5003 8.33267 5.12405 8.33267 4.6713L8.33268 4.6655C8.33275 4.53031 8.33304 4.00145 8.03225 3.49456C7.69595 2.92783 7.0546 2.5 5.99934 2.5C5.4707 2.5 5.03512 2.62096 4.68569 2.83234C4.33733 3.04308 4.1069 3.32409 3.95719 3.5958C3.80929 3.86419 3.73807 4.1266 3.70295 4.3178C3.68516 4.41463 3.67599 4.49679 3.67122 4.55729C3.66884 4.58764 3.66753 4.61284 3.66683 4.63205C3.66648 4.64166 3.66627 4.64981 3.66615 4.65637L3.66604 4.66504L3.66601 4.66848L3.66601 4.66996L3.66601 4.67065L3.66602 4.6713C3.66602 4.99346 3.92717 5.25463 4.24934 5.25463C4.56974 5.25463 4.8298 4.99632 4.83265 4.6766L4.83266 4.67525C4.83281 4.6712 4.83326 4.66191 4.83429 4.64884C4.83637 4.6225 4.84086 4.5806 4.85042 4.52856C4.86999 4.42201 4.90814 4.28743 4.979 4.15883C5.04803 4.03355 5.14573 3.91757 5.28956 3.83057C5.43231 3.74421 5.65298 3.66667 5.99934 3.66667C6.69408 3.66667 6.92773 3.91939 7.02893 4.08993C7.16115 4.31274 7.16601 4.56962 7.16601 4.6713C7.16601 4.89737 7.10945 4.95573 7.09616 4.96945C7.06306 5.00364 6.99342 5.04673 6.80958 5.10234C6.77957 5.11142 6.74064 5.12213 6.69577 5.13448C6.54248 5.17665 6.31968 5.23795 6.14505 5.31873C5.87182 5.44511 5.58068 5.66724 5.44549 6.07615C5.42596 6.13522 5.41601 6.19704 5.41601 6.25926L5.41602 6.729C5.41602 7.05117 5.67718 7.3125 5.99935 7.3125C6.32152 7.3125 6.58268 7.05133 6.58268 6.72916L6.58267 6.40568Z"
+                                                                        fill="#8B8B8B" />
+                                                                    <path
+                                                                        d="M5.99935 9.5C6.32152 9.5 6.58268 9.23883 6.58268 8.91667C6.58268 8.5945 6.32152 8.33333 5.99935 8.33333C5.67718 8.33333 5.41602 8.5945 5.41602 8.91667C5.41602 9.23883 5.67718 9.5 5.99935 9.5Z"
+                                                                        fill="#8B8B8B" />
+                                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                        d="M5.99935 11.8333C9.22101 11.8333 11.8327 9.22166 11.8327 6C11.8327 2.77834 9.22101 0.166667 5.99935 0.166667C2.77769 0.166667 0.166016 2.77834 0.166016 6C0.166016 9.22166 2.77769 11.8333 5.99935 11.8333ZM5.99935 10.6667C8.57668 10.6667 10.666 8.57733 10.666 6C10.666 3.42267 8.57668 1.33333 5.99935 1.33333C3.42202 1.33333 1.33268 3.42267 1.33268 6C1.33268 8.57733 3.42202 10.6667 5.99935 10.6667Z"
+                                                                        fill="#8B8B8B" />
+                                                                </svg>
 
-        var myChart1 = new Chart(ctx1, {
-            type: 'pie',
-            data: {
-                labels: ["Refrigrants", "  Stationary Combustion", "  Mobile Combustion"],
-                datasets: [{
-                    backgroundColor: [
-                        "#18293D",
-                        "#2EE52B",
-                        "#CED4D2",
-                    ],
-                    data: [33.3, 33.3, 33.3]
-                }]
-            }
-        });
+                                                            </div>
+                      </a>
+                    </div>
+                  </div>
+                   <div class="col-lg-12">
+                    <div class="fileUpload">
+                      <label for="legal_file" class="upload-label" style="cursor: pointer;">
+                        Select File here
+                      </label>
+                      <p class="file-support-text">Files Supported: PDF, TEXT, DOC, DOCX, JPEG, PNG</p>
+                      <input type="file" multiple class="form-control multi-file-upload-input" id="legal_file"
+                        name="legal_file[]" data-file-list-id="file-list-1">
+                      <small id="file_error" style="color: red;"></small>
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="btnsec">
+                      <div class="item">
+                        <a href="javascript:void(0)" class="cmnbtn hoveranim">
+                          <span>cancel</span>
+                        </a>
+                      </div>
+                      <div class="item">
+                        
+                        <button type="button" class="cmnbtn hoveranim save-organization-reporting-process5"
+                          data-bs-toggle="collapse" data-bs-target="#biodiversityInnerAccord3"
+                          aria-expanded="false" aria-controls="biodiversityInnerAccord3">
+                          <span>save & continue</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item cmnBx mb-0">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#biodiversityInnerAccord3" aria-expanded="false" aria-controls="biodiversityInnerAccord3">
+              <p class="mb-0"> 3.Position in relation to the protected area (in the area, adjacent to, or containing portions of the protected area) or the high biodiversity value area outside protected areas			
 
-        var myChart2 = new Chart(ctx2, {
-            type: 'pie',
-            data: {
-                labels: ["Refrigrants", "  Stationary Combustion", "  Mobile Combustion"],
-                datasets: [{
-                    backgroundColor: [
-                        "#18293D",
-                        "#2EE52B",
-                        "#CED4D2",
-                    ],
-                    data: [33.3, 33.3, 33.3]
-                }]
-            }
-        });
+              </p>
+            </button>
+          </h2>
+          <div id="biodiversityInnerAccord3" class="accordion-collapse collapse" data-bs-parent="#biodiversityInnerAccord">
+            <div class="cmnBx">
 
-        var myChart3 = new Chart(ctx3, {
-            type: 'pie',
-            data: {
-                labels: ["Refrigrants", "  Stationary Combustion", "  Mobile Combustion", "Refrigrants",
-                    "  Stationary Combustion", "  Mobile Combustion"
-                ],
-                datasets: [{
-                    backgroundColor: [
-                        "#18293D",
-                        "#2EE52B",
-                        "#CED4D2",
-                        "#18293D",
-                        "#2EE52B",
-                        "#CED4D2",
-                    ],
-                    data: [10, 10, 10, 10, 10, 10, 10, 10, 10, 10]
-                }]
-            }
-        });
-    </script>
+              <form action="javascript:void(0)" method="post">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="formgroup">
+                       <input type="text" class="form-control" placeholder="Enter Your Response">
+                      <a href="" class="guideBxx" data-bs-toggle="modal"
+                                                            data-bs-target="#gidanceModal1">
+                                                            Guidance
+                                                            <div class="icon">
+                                                                <svg width="12" height="12" viewBox="0 0 12 12"
+                                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path
+                                                                        d="M6.58267 6.40568C6.59428 6.3979 6.61088 6.38868 6.63484 6.3776C6.71676 6.3397 6.7928 6.3189 6.90734 6.28755C6.97228 6.26978 7.0496 6.24861 7.1474 6.21903C7.36634 6.1528 7.68242 6.04117 7.93405 5.78126C8.20607 5.5003 8.33267 5.12405 8.33267 4.6713L8.33268 4.6655C8.33275 4.53031 8.33304 4.00145 8.03225 3.49456C7.69595 2.92783 7.0546 2.5 5.99934 2.5C5.4707 2.5 5.03512 2.62096 4.68569 2.83234C4.33733 3.04308 4.1069 3.32409 3.95719 3.5958C3.80929 3.86419 3.73807 4.1266 3.70295 4.3178C3.68516 4.41463 3.67599 4.49679 3.67122 4.55729C3.66884 4.58764 3.66753 4.61284 3.66683 4.63205C3.66648 4.64166 3.66627 4.64981 3.66615 4.65637L3.66604 4.66504L3.66601 4.66848L3.66601 4.66996L3.66601 4.67065L3.66602 4.6713C3.66602 4.99346 3.92717 5.25463 4.24934 5.25463C4.56974 5.25463 4.8298 4.99632 4.83265 4.6766L4.83266 4.67525C4.83281 4.6712 4.83326 4.66191 4.83429 4.64884C4.83637 4.6225 4.84086 4.5806 4.85042 4.52856C4.86999 4.42201 4.90814 4.28743 4.979 4.15883C5.04803 4.03355 5.14573 3.91757 5.28956 3.83057C5.43231 3.74421 5.65298 3.66667 5.99934 3.66667C6.69408 3.66667 6.92773 3.91939 7.02893 4.08993C7.16115 4.31274 7.16601 4.56962 7.16601 4.6713C7.16601 4.89737 7.10945 4.95573 7.09616 4.96945C7.06306 5.00364 6.99342 5.04673 6.80958 5.10234C6.77957 5.11142 6.74064 5.12213 6.69577 5.13448C6.54248 5.17665 6.31968 5.23795 6.14505 5.31873C5.87182 5.44511 5.58068 5.66724 5.44549 6.07615C5.42596 6.13522 5.41601 6.19704 5.41601 6.25926L5.41602 6.729C5.41602 7.05117 5.67718 7.3125 5.99935 7.3125C6.32152 7.3125 6.58268 7.05133 6.58268 6.72916L6.58267 6.40568Z"
+                                                                        fill="#8B8B8B" />
+                                                                    <path
+                                                                        d="M5.99935 9.5C6.32152 9.5 6.58268 9.23883 6.58268 8.91667C6.58268 8.5945 6.32152 8.33333 5.99935 8.33333C5.67718 8.33333 5.41602 8.5945 5.41602 8.91667C5.41602 9.23883 5.67718 9.5 5.99935 9.5Z"
+                                                                        fill="#8B8B8B" />
+                                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                        d="M5.99935 11.8333C9.22101 11.8333 11.8327 9.22166 11.8327 6C11.8327 2.77834 9.22101 0.166667 5.99935 0.166667C2.77769 0.166667 0.166016 2.77834 0.166016 6C0.166016 9.22166 2.77769 11.8333 5.99935 11.8333ZM5.99935 10.6667C8.57668 10.6667 10.666 8.57733 10.666 6C10.666 3.42267 8.57668 1.33333 5.99935 1.33333C3.42202 1.33333 1.33268 3.42267 1.33268 6C1.33268 8.57733 3.42202 10.6667 5.99935 10.6667Z"
+                                                                        fill="#8B8B8B" />
+                                                                </svg>
+
+                                                            </div>
+                      </a>
+                    </div>
+                  </div>
+                   <div class="col-lg-12">
+                    <div class="fileUpload">
+                      <label for="legal_file" class="upload-label" style="cursor: pointer;">
+                        Select File here
+                      </label>
+                      <p class="file-support-text">Files Supported: PDF, TEXT, DOC, DOCX, JPEG, PNG</p>
+                      <input type="file" multiple class="form-control multi-file-upload-input" id="legal_file"
+                        name="legal_file[]" data-file-list-id="file-list-1">
+                      <small id="file_error" style="color: red;"></small>
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="btnsec">
+                      <div class="item">
+                        <a href="javascript:void(0)" class="cmnbtn hoveranim">
+                          <span>cancel</span>
+                        </a>
+                      </div>
+                      <div class="item">
+                        
+                        <button type="button" class="cmnbtn hoveranim save-organization-reporting-process5"
+                          data-bs-toggle="collapse" data-bs-target="#biodiversityInnerAccord4"
+                          aria-expanded="false" aria-controls="biodiversityInnerAccord4">
+                          <span>save & continue</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item cmnBx mb-0">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#biodiversityInnerAccord4" aria-expanded="false" aria-controls="biodiversityInnerAccord4">
+              <p class="mb-0"> 4.Type of operation (office, manufacturing or production, or extractive)			</p>
+            </button>
+          </h2>
+          <div id="biodiversityInnerAccord4" class="accordion-collapse collapse" data-bs-parent="#biodiversityInnerAccord">
+            <div class="cmnBx">
+        
+              <form action="javascript:void(0)" method="post">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="formgroup">
+                       <input type="text" class="form-control" placeholder="Enter Your Response">
+                      <a href="" class="guideBxx" data-bs-toggle="modal"
+                                                            data-bs-target="#gidanceModal1">
+                                                            Guidance
+                                                            <div class="icon">
+                                                                <svg width="12" height="12" viewBox="0 0 12 12"
+                                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path
+                                                                        d="M6.58267 6.40568C6.59428 6.3979 6.61088 6.38868 6.63484 6.3776C6.71676 6.3397 6.7928 6.3189 6.90734 6.28755C6.97228 6.26978 7.0496 6.24861 7.1474 6.21903C7.36634 6.1528 7.68242 6.04117 7.93405 5.78126C8.20607 5.5003 8.33267 5.12405 8.33267 4.6713L8.33268 4.6655C8.33275 4.53031 8.33304 4.00145 8.03225 3.49456C7.69595 2.92783 7.0546 2.5 5.99934 2.5C5.4707 2.5 5.03512 2.62096 4.68569 2.83234C4.33733 3.04308 4.1069 3.32409 3.95719 3.5958C3.80929 3.86419 3.73807 4.1266 3.70295 4.3178C3.68516 4.41463 3.67599 4.49679 3.67122 4.55729C3.66884 4.58764 3.66753 4.61284 3.66683 4.63205C3.66648 4.64166 3.66627 4.64981 3.66615 4.65637L3.66604 4.66504L3.66601 4.66848L3.66601 4.66996L3.66601 4.67065L3.66602 4.6713C3.66602 4.99346 3.92717 5.25463 4.24934 5.25463C4.56974 5.25463 4.8298 4.99632 4.83265 4.6766L4.83266 4.67525C4.83281 4.6712 4.83326 4.66191 4.83429 4.64884C4.83637 4.6225 4.84086 4.5806 4.85042 4.52856C4.86999 4.42201 4.90814 4.28743 4.979 4.15883C5.04803 4.03355 5.14573 3.91757 5.28956 3.83057C5.43231 3.74421 5.65298 3.66667 5.99934 3.66667C6.69408 3.66667 6.92773 3.91939 7.02893 4.08993C7.16115 4.31274 7.16601 4.56962 7.16601 4.6713C7.16601 4.89737 7.10945 4.95573 7.09616 4.96945C7.06306 5.00364 6.99342 5.04673 6.80958 5.10234C6.77957 5.11142 6.74064 5.12213 6.69577 5.13448C6.54248 5.17665 6.31968 5.23795 6.14505 5.31873C5.87182 5.44511 5.58068 5.66724 5.44549 6.07615C5.42596 6.13522 5.41601 6.19704 5.41601 6.25926L5.41602 6.729C5.41602 7.05117 5.67718 7.3125 5.99935 7.3125C6.32152 7.3125 6.58268 7.05133 6.58268 6.72916L6.58267 6.40568Z"
+                                                                        fill="#8B8B8B" />
+                                                                    <path
+                                                                        d="M5.99935 9.5C6.32152 9.5 6.58268 9.23883 6.58268 8.91667C6.58268 8.5945 6.32152 8.33333 5.99935 8.33333C5.67718 8.33333 5.41602 8.5945 5.41602 8.91667C5.41602 9.23883 5.67718 9.5 5.99935 9.5Z"
+                                                                        fill="#8B8B8B" />
+                                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                        d="M5.99935 11.8333C9.22101 11.8333 11.8327 9.22166 11.8327 6C11.8327 2.77834 9.22101 0.166667 5.99935 0.166667C2.77769 0.166667 0.166016 2.77834 0.166016 6C0.166016 9.22166 2.77769 11.8333 5.99935 11.8333ZM5.99935 10.6667C8.57668 10.6667 10.666 8.57733 10.666 6C10.666 3.42267 8.57668 1.33333 5.99935 1.33333C3.42202 1.33333 1.33268 3.42267 1.33268 6C1.33268 8.57733 3.42202 10.6667 5.99935 10.6667Z"
+                                                                        fill="#8B8B8B" />
+                                                                </svg>
+
+                                                            </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="fileUpload">
+                      <label for="legal_file" class="upload-label" style="cursor: pointer;">
+                        Select File here
+                      </label>
+                      <p class="file-support-text">Files Supported: PDF, TEXT, DOC, DOCX, JPEG, PNG</p>
+                      <input type="file" multiple class="form-control multi-file-upload-input" id="legal_file"
+                        name="legal_file[]" data-file-list-id="file-list-1">
+                      <small id="file_error" style="color: red;"></small>
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="btnsec">
+                      <div class="item">
+                        <a href="javascript:void(0)" class="cmnbtn hoveranim">
+                          <span>cancel</span>
+                        </a>
+                      </div>
+                      <div class="item">
+                        <!-- <button type="submit" class="cmnbtn hoveranim" data-bs-toggle="collapse"
+                          data-bs-target="#biodiversityInnerAccord5" aria-expanded="false" aria-controls="biodiversityInnerAccord5">
+                          <span>save & continue</span>
+                        </button> -->
+                        <button type="button" class="cmnbtn hoveranim save-organization-reporting-process5"
+                          data-bs-toggle="collapse" data-bs-target="#biodiversityInnerAccord5"
+                          aria-expanded="false" aria-controls="biodiversityInnerAccord5">
+                          <span>save & continue</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item cmnBx mb-0">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#biodiversityInnerAccord5" aria-expanded="false" aria-controls="biodiversityInnerAccord5">
+              <p class="mb-0">5.Size of operational site			</p>
+            </button>
+          </h2>
+          <div id="biodiversityInnerAccord5" class="accordion-collapse collapse" data-bs-parent="#biodiversityInnerAccord">
+            <div class="cmnBx">
+        
+              <form action="javascript:void(0)" method="post">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="formgroup">
+                       <input type="text" class="form-control" placeholder="Enter Your Response">
+                      <a href="" class="guideBxx" data-bs-toggle="modal"
+                                                            data-bs-target="#gidanceModal1">
+                                                            Guidance
+                                                            <div class="icon">
+                                                                <svg width="12" height="12" viewBox="0 0 12 12"
+                                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path
+                                                                        d="M6.58267 6.40568C6.59428 6.3979 6.61088 6.38868 6.63484 6.3776C6.71676 6.3397 6.7928 6.3189 6.90734 6.28755C6.97228 6.26978 7.0496 6.24861 7.1474 6.21903C7.36634 6.1528 7.68242 6.04117 7.93405 5.78126C8.20607 5.5003 8.33267 5.12405 8.33267 4.6713L8.33268 4.6655C8.33275 4.53031 8.33304 4.00145 8.03225 3.49456C7.69595 2.92783 7.0546 2.5 5.99934 2.5C5.4707 2.5 5.03512 2.62096 4.68569 2.83234C4.33733 3.04308 4.1069 3.32409 3.95719 3.5958C3.80929 3.86419 3.73807 4.1266 3.70295 4.3178C3.68516 4.41463 3.67599 4.49679 3.67122 4.55729C3.66884 4.58764 3.66753 4.61284 3.66683 4.63205C3.66648 4.64166 3.66627 4.64981 3.66615 4.65637L3.66604 4.66504L3.66601 4.66848L3.66601 4.66996L3.66601 4.67065L3.66602 4.6713C3.66602 4.99346 3.92717 5.25463 4.24934 5.25463C4.56974 5.25463 4.8298 4.99632 4.83265 4.6766L4.83266 4.67525C4.83281 4.6712 4.83326 4.66191 4.83429 4.64884C4.83637 4.6225 4.84086 4.5806 4.85042 4.52856C4.86999 4.42201 4.90814 4.28743 4.979 4.15883C5.04803 4.03355 5.14573 3.91757 5.28956 3.83057C5.43231 3.74421 5.65298 3.66667 5.99934 3.66667C6.69408 3.66667 6.92773 3.91939 7.02893 4.08993C7.16115 4.31274 7.16601 4.56962 7.16601 4.6713C7.16601 4.89737 7.10945 4.95573 7.09616 4.96945C7.06306 5.00364 6.99342 5.04673 6.80958 5.10234C6.77957 5.11142 6.74064 5.12213 6.69577 5.13448C6.54248 5.17665 6.31968 5.23795 6.14505 5.31873C5.87182 5.44511 5.58068 5.66724 5.44549 6.07615C5.42596 6.13522 5.41601 6.19704 5.41601 6.25926L5.41602 6.729C5.41602 7.05117 5.67718 7.3125 5.99935 7.3125C6.32152 7.3125 6.58268 7.05133 6.58268 6.72916L6.58267 6.40568Z"
+                                                                        fill="#8B8B8B" />
+                                                                    <path
+                                                                        d="M5.99935 9.5C6.32152 9.5 6.58268 9.23883 6.58268 8.91667C6.58268 8.5945 6.32152 8.33333 5.99935 8.33333C5.67718 8.33333 5.41602 8.5945 5.41602 8.91667C5.41602 9.23883 5.67718 9.5 5.99935 9.5Z"
+                                                                        fill="#8B8B8B" />
+                                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                        d="M5.99935 11.8333C9.22101 11.8333 11.8327 9.22166 11.8327 6C11.8327 2.77834 9.22101 0.166667 5.99935 0.166667C2.77769 0.166667 0.166016 2.77834 0.166016 6C0.166016 9.22166 2.77769 11.8333 5.99935 11.8333ZM5.99935 10.6667C8.57668 10.6667 10.666 8.57733 10.666 6C10.666 3.42267 8.57668 1.33333 5.99935 1.33333C3.42202 1.33333 1.33268 3.42267 1.33268 6C1.33268 8.57733 3.42202 10.6667 5.99935 10.6667Z"
+                                                                        fill="#8B8B8B" />
+                                                                </svg>
+
+                                                            </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="fileUpload">
+                      <label for="legal_file" class="upload-label" style="cursor: pointer;">
+                        Select File here
+                      </label>
+                      <p class="file-support-text">Files Supported: PDF, TEXT, DOC, DOCX, JPEG, PNG</p>
+                      <input type="file" multiple class="form-control multi-file-upload-input" id="legal_file"
+                        name="legal_file[]" data-file-list-id="file-list-1">
+                      <small id="file_error" style="color: red;"></small>
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="btnsec">
+                      <div class="item">
+                        <a href="javascript:void(0)" class="cmnbtn hoveranim">
+                          <span>cancel</span>
+                        </a>
+                      </div>
+                      <!-- <div class="item">
+                        <button type="submit" class="cmnbtn hoveranim" data-bs-toggle="collapse"
+                          data-bs-target="#biodiversityInnerAccord6" aria-expanded="false" aria-controls="biodiversityInnerAccord6">
+                          <span>save & continue</span>
+                        </button>
+                      </div> -->
+                       <div class="item">
+                         <button type="button" class="cmnbtn hoveranim save-organization-reporting-process5"
+                          data-bs-toggle="collapse" data-bs-target="#biodiversityInnerAccord6"
+                          aria-expanded="false" aria-controls="biodiversityInnerAccord6">
+                          <span>save & continue</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item cmnBx mb-0">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#biodiversityInnerAccord6" aria-expanded="false" aria-controls="biodiversityInnerAccord6">
+              <p class="mb-0"> 6.Biodiversity value characterized by the attribute of the protected area or area of high biodiversity value outside the protected area (terrestrial, freshwater, or maritime ecosystem)</p>
+            </button>
+          </h2>
+          <div id="biodiversityInnerAccord6" class="accordion-collapse collapse" data-bs-parent="#biodiversityInnerAccord">
+            <div class="cmnBx">
+
+              <form action="javascript:void(0)" method="post">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="formgroup">
+                       <input type="text" class="form-control" placeholder="Enter Your Response">
+                      <a href="" class="guideBxx" data-bs-toggle="modal"
+                                                            data-bs-target="#gidanceModal1">
+                                                            Guidance
+                                                            <div class="icon">
+                                                                <svg width="12" height="12" viewBox="0 0 12 12"
+                                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path
+                                                                        d="M6.58267 6.40568C6.59428 6.3979 6.61088 6.38868 6.63484 6.3776C6.71676 6.3397 6.7928 6.3189 6.90734 6.28755C6.97228 6.26978 7.0496 6.24861 7.1474 6.21903C7.36634 6.1528 7.68242 6.04117 7.93405 5.78126C8.20607 5.5003 8.33267 5.12405 8.33267 4.6713L8.33268 4.6655C8.33275 4.53031 8.33304 4.00145 8.03225 3.49456C7.69595 2.92783 7.0546 2.5 5.99934 2.5C5.4707 2.5 5.03512 2.62096 4.68569 2.83234C4.33733 3.04308 4.1069 3.32409 3.95719 3.5958C3.80929 3.86419 3.73807 4.1266 3.70295 4.3178C3.68516 4.41463 3.67599 4.49679 3.67122 4.55729C3.66884 4.58764 3.66753 4.61284 3.66683 4.63205C3.66648 4.64166 3.66627 4.64981 3.66615 4.65637L3.66604 4.66504L3.66601 4.66848L3.66601 4.66996L3.66601 4.67065L3.66602 4.6713C3.66602 4.99346 3.92717 5.25463 4.24934 5.25463C4.56974 5.25463 4.8298 4.99632 4.83265 4.6766L4.83266 4.67525C4.83281 4.6712 4.83326 4.66191 4.83429 4.64884C4.83637 4.6225 4.84086 4.5806 4.85042 4.52856C4.86999 4.42201 4.90814 4.28743 4.979 4.15883C5.04803 4.03355 5.14573 3.91757 5.28956 3.83057C5.43231 3.74421 5.65298 3.66667 5.99934 3.66667C6.69408 3.66667 6.92773 3.91939 7.02893 4.08993C7.16115 4.31274 7.16601 4.56962 7.16601 4.6713C7.16601 4.89737 7.10945 4.95573 7.09616 4.96945C7.06306 5.00364 6.99342 5.04673 6.80958 5.10234C6.77957 5.11142 6.74064 5.12213 6.69577 5.13448C6.54248 5.17665 6.31968 5.23795 6.14505 5.31873C5.87182 5.44511 5.58068 5.66724 5.44549 6.07615C5.42596 6.13522 5.41601 6.19704 5.41601 6.25926L5.41602 6.729C5.41602 7.05117 5.67718 7.3125 5.99935 7.3125C6.32152 7.3125 6.58268 7.05133 6.58268 6.72916L6.58267 6.40568Z"
+                                                                        fill="#8B8B8B" />
+                                                                    <path
+                                                                        d="M5.99935 9.5C6.32152 9.5 6.58268 9.23883 6.58268 8.91667C6.58268 8.5945 6.32152 8.33333 5.99935 8.33333C5.67718 8.33333 5.41602 8.5945 5.41602 8.91667C5.41602 9.23883 5.67718 9.5 5.99935 9.5Z"
+                                                                        fill="#8B8B8B" />
+                                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                        d="M5.99935 11.8333C9.22101 11.8333 11.8327 9.22166 11.8327 6C11.8327 2.77834 9.22101 0.166667 5.99935 0.166667C2.77769 0.166667 0.166016 2.77834 0.166016 6C0.166016 9.22166 2.77769 11.8333 5.99935 11.8333ZM5.99935 10.6667C8.57668 10.6667 10.666 8.57733 10.666 6C10.666 3.42267 8.57668 1.33333 5.99935 1.33333C3.42202 1.33333 1.33268 3.42267 1.33268 6C1.33268 8.57733 3.42202 10.6667 5.99935 10.6667Z"
+                                                                        fill="#8B8B8B" />
+                                                                </svg>
+
+                                                            </div>
+                      </a>
+                    </div>
+                  </div>
+                   <div class="col-lg-12">
+                    <div class="fileUpload">
+                      <label for="legal_file" class="upload-label" style="cursor: pointer;">
+                        Select File here
+                      </label>
+                      <p class="file-support-text">Files Supported: PDF, TEXT, DOC, DOCX, JPEG, PNG</p>
+                      <input type="file" multiple class="form-control multi-file-upload-input" id="legal_file"
+                        name="legal_file[]" data-file-list-id="file-list-1">
+                      <small id="file_error" style="color: red;"></small>
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="btnsec">
+                      <div class="item">
+                        <a href="javascript:void(0)" class="cmnbtn hoveranim">
+                          <span>cancel</span>
+                        </a>
+                      </div>
+                      <div class="item">
+                         <button type="button" class="cmnbtn hoveranim save-organization-reporting-process5"
+                          data-bs-toggle="collapse" data-bs-target="#biodiversityInnerAccord7"
+                          aria-expanded="false" aria-controls="biodiversityInnerAccord7">
+                          <span>save & continue</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item cmnBx mb-0">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#biodiversityInnerAccord7" aria-expanded="false" aria-controls="biodiversityInnerAccord7">
+              <p class="mb-0"> 7.Biodiversity value characterized by listing of protected status (such as IUCN Protected Area Management Categories, Ramsar Convention, national legislation)			</p>
+            </button>
+          </h2>
+          <div id="biodiversityInnerAccord7" class="accordion-collapse collapse" data-bs-parent="#biodiversityInnerAccord">
+            <div class="cmnBx">
+
+              <form action="javascript:void(0)" method="post">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="formgroup">
+                       <input type="text" class="form-control" placeholder="Enter Your Response">
+                      <a href="" class="guideBxx" data-bs-toggle="modal"
+                                                            data-bs-target="#gidanceModal1">
+                                                            Guidance
+                                                            <div class="icon">
+                                                                <svg width="12" height="12" viewBox="0 0 12 12"
+                                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path
+                                                                        d="M6.58267 6.40568C6.59428 6.3979 6.61088 6.38868 6.63484 6.3776C6.71676 6.3397 6.7928 6.3189 6.90734 6.28755C6.97228 6.26978 7.0496 6.24861 7.1474 6.21903C7.36634 6.1528 7.68242 6.04117 7.93405 5.78126C8.20607 5.5003 8.33267 5.12405 8.33267 4.6713L8.33268 4.6655C8.33275 4.53031 8.33304 4.00145 8.03225 3.49456C7.69595 2.92783 7.0546 2.5 5.99934 2.5C5.4707 2.5 5.03512 2.62096 4.68569 2.83234C4.33733 3.04308 4.1069 3.32409 3.95719 3.5958C3.80929 3.86419 3.73807 4.1266 3.70295 4.3178C3.68516 4.41463 3.67599 4.49679 3.67122 4.55729C3.66884 4.58764 3.66753 4.61284 3.66683 4.63205C3.66648 4.64166 3.66627 4.64981 3.66615 4.65637L3.66604 4.66504L3.66601 4.66848L3.66601 4.66996L3.66601 4.67065L3.66602 4.6713C3.66602 4.99346 3.92717 5.25463 4.24934 5.25463C4.56974 5.25463 4.8298 4.99632 4.83265 4.6766L4.83266 4.67525C4.83281 4.6712 4.83326 4.66191 4.83429 4.64884C4.83637 4.6225 4.84086 4.5806 4.85042 4.52856C4.86999 4.42201 4.90814 4.28743 4.979 4.15883C5.04803 4.03355 5.14573 3.91757 5.28956 3.83057C5.43231 3.74421 5.65298 3.66667 5.99934 3.66667C6.69408 3.66667 6.92773 3.91939 7.02893 4.08993C7.16115 4.31274 7.16601 4.56962 7.16601 4.6713C7.16601 4.89737 7.10945 4.95573 7.09616 4.96945C7.06306 5.00364 6.99342 5.04673 6.80958 5.10234C6.77957 5.11142 6.74064 5.12213 6.69577 5.13448C6.54248 5.17665 6.31968 5.23795 6.14505 5.31873C5.87182 5.44511 5.58068 5.66724 5.44549 6.07615C5.42596 6.13522 5.41601 6.19704 5.41601 6.25926L5.41602 6.729C5.41602 7.05117 5.67718 7.3125 5.99935 7.3125C6.32152 7.3125 6.58268 7.05133 6.58268 6.72916L6.58267 6.40568Z"
+                                                                        fill="#8B8B8B" />
+                                                                    <path
+                                                                        d="M5.99935 9.5C6.32152 9.5 6.58268 9.23883 6.58268 8.91667C6.58268 8.5945 6.32152 8.33333 5.99935 8.33333C5.67718 8.33333 5.41602 8.5945 5.41602 8.91667C5.41602 9.23883 5.67718 9.5 5.99935 9.5Z"
+                                                                        fill="#8B8B8B" />
+                                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                        d="M5.99935 11.8333C9.22101 11.8333 11.8327 9.22166 11.8327 6C11.8327 2.77834 9.22101 0.166667 5.99935 0.166667C2.77769 0.166667 0.166016 2.77834 0.166016 6C0.166016 9.22166 2.77769 11.8333 5.99935 11.8333ZM5.99935 10.6667C8.57668 10.6667 10.666 8.57733 10.666 6C10.666 3.42267 8.57668 1.33333 5.99935 1.33333C3.42202 1.33333 1.33268 3.42267 1.33268 6C1.33268 8.57733 3.42202 10.6667 5.99935 10.6667Z"
+                                                                        fill="#8B8B8B" />
+                                                                </svg>
+
+                                                            </div>
+                      </a>
+                    </div>
+                  </div>
+                   <div class="col-lg-12">
+                    <div class="fileUpload">
+                      <label for="legal_file" class="upload-label" style="cursor: pointer;">
+                        Select File here
+                      </label>
+                      <p class="file-support-text">Files Supported: PDF, TEXT, DOC, DOCX, JPEG, PNG</p>
+                      <input type="file" multiple class="form-control multi-file-upload-input" id="legal_file"
+                        name="legal_file[]" data-file-list-id="file-list-1">
+                      <small id="file_error" style="color: red;"></small>
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="btnsec">
+                      <div class="item">
+                        <a href="javascript:void(0)" class="cmnbtn hoveranim">
+                          <span>cancel</span>
+                        </a>
+                      </div>
+                      <div class="item">
+                         <button type="button" class="cmnbtn hoveranim save-organization-reporting-process5"
+                          data-bs-toggle="collapse" data-bs-target="#reportAccord2"
+                          aria-expanded="false" aria-controls="reportAccord2">
+                          <span>save & continue</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
+      <div class="accordion-item">
+  <h2 class="accordion-header">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#reportAccord2"
+      aria-expanded="false" aria-controls="reportAccord2">
+      Significant impacts of activities, products, and services on biodiversity
 
-<?php include './includes/footer.php'?>
+    </button>
+  </h2>
+  <div id="reportAccord2" class="accordion-collapse collapse" data-bs-parent="#reportAccord">
+    <div class="accordion-body">
+
+      <div class="accordion" id="biodiversityInnerAccordbiodiversityimpacts">
+        <div class="accordion-item cmnBx mb-0">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+              data-bs-target="#biodiversityInnerAccordbiodiversityimpacts1" aria-expanded="true"
+              aria-controls="biodiversityInnerAccordbiodiversityimpacts1">
+            <p class="mb-0">Nature of significant direct and indirect impacts on biodiversity with reference to one or more of the following
+                           1.Construction or use of manufacturing plants, mines, and transport infrastructure			
+            </p>
+
+            </button>
+          </h2>
+          <div id="biodiversityInnerAccordbiodiversityimpacts1" class="accordion-collapse collapse show"
+            data-bs-parent="#biodiversityInnerAccordbiodiversityimpacts">
+            <div class="cmnBx">
+
+              <form id="organizationProcess5" data-type="organization_process_step_5" method="POST" role="form"
+                enctype="multipart/form-data">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="formgroup">
+                     
+                      <input type="text" class="form-control" id="entities_included_response"
+                        name="entities_included_response" placeholder="Enter Your Response">
+                      <small id="entities_included_response_error" style="color: red;"></small>
+                      <a href="" class="guideBxx" data-bs-toggle="modal"
+                                                            data-bs-target="#gidanceModal1">
+                                                            Guidance
+                                                            <div class="icon">
+                                                                <svg width="12" height="12" viewBox="0 0 12 12"
+                                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path
+                                                                        d="M6.58267 6.40568C6.59428 6.3979 6.61088 6.38868 6.63484 6.3776C6.71676 6.3397 6.7928 6.3189 6.90734 6.28755C6.97228 6.26978 7.0496 6.24861 7.1474 6.21903C7.36634 6.1528 7.68242 6.04117 7.93405 5.78126C8.20607 5.5003 8.33267 5.12405 8.33267 4.6713L8.33268 4.6655C8.33275 4.53031 8.33304 4.00145 8.03225 3.49456C7.69595 2.92783 7.0546 2.5 5.99934 2.5C5.4707 2.5 5.03512 2.62096 4.68569 2.83234C4.33733 3.04308 4.1069 3.32409 3.95719 3.5958C3.80929 3.86419 3.73807 4.1266 3.70295 4.3178C3.68516 4.41463 3.67599 4.49679 3.67122 4.55729C3.66884 4.58764 3.66753 4.61284 3.66683 4.63205C3.66648 4.64166 3.66627 4.64981 3.66615 4.65637L3.66604 4.66504L3.66601 4.66848L3.66601 4.66996L3.66601 4.67065L3.66602 4.6713C3.66602 4.99346 3.92717 5.25463 4.24934 5.25463C4.56974 5.25463 4.8298 4.99632 4.83265 4.6766L4.83266 4.67525C4.83281 4.6712 4.83326 4.66191 4.83429 4.64884C4.83637 4.6225 4.84086 4.5806 4.85042 4.52856C4.86999 4.42201 4.90814 4.28743 4.979 4.15883C5.04803 4.03355 5.14573 3.91757 5.28956 3.83057C5.43231 3.74421 5.65298 3.66667 5.99934 3.66667C6.69408 3.66667 6.92773 3.91939 7.02893 4.08993C7.16115 4.31274 7.16601 4.56962 7.16601 4.6713C7.16601 4.89737 7.10945 4.95573 7.09616 4.96945C7.06306 5.00364 6.99342 5.04673 6.80958 5.10234C6.77957 5.11142 6.74064 5.12213 6.69577 5.13448C6.54248 5.17665 6.31968 5.23795 6.14505 5.31873C5.87182 5.44511 5.58068 5.66724 5.44549 6.07615C5.42596 6.13522 5.41601 6.19704 5.41601 6.25926L5.41602 6.729C5.41602 7.05117 5.67718 7.3125 5.99935 7.3125C6.32152 7.3125 6.58268 7.05133 6.58268 6.72916L6.58267 6.40568Z"
+                                                                        fill="#8B8B8B" />
+                                                                    <path
+                                                                        d="M5.99935 9.5C6.32152 9.5 6.58268 9.23883 6.58268 8.91667C6.58268 8.5945 6.32152 8.33333 5.99935 8.33333C5.67718 8.33333 5.41602 8.5945 5.41602 8.91667C5.41602 9.23883 5.67718 9.5 5.99935 9.5Z"
+                                                                        fill="#8B8B8B" />
+                                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                        d="M5.99935 11.8333C9.22101 11.8333 11.8327 9.22166 11.8327 6C11.8327 2.77834 9.22101 0.166667 5.99935 0.166667C2.77769 0.166667 0.166016 2.77834 0.166016 6C0.166016 9.22166 2.77769 11.8333 5.99935 11.8333ZM5.99935 10.6667C8.57668 10.6667 10.666 8.57733 10.666 6C10.666 3.42267 8.57668 1.33333 5.99935 1.33333C3.42202 1.33333 1.33268 3.42267 1.33268 6C1.33268 8.57733 3.42202 10.6667 5.99935 10.6667Z"
+                                                                        fill="#8B8B8B" />
+                                                                </svg>
+
+                                                            </div>
+                      </a>
+                    </div>
+                  </div>
+                   <div class="col-lg-12">
+                    <div class="fileUpload">
+                      <label for="legal_file" class="upload-label" style="cursor: pointer;">
+                        Select File here
+                      </label>
+                      <p class="file-support-text">Files Supported: PDF, TEXT, DOC, DOCX, JPEG, PNG</p>
+                      <input type="file" multiple class="form-control multi-file-upload-input" id="legal_file"
+                        name="legal_file[]" data-file-list-id="file-list-1">
+                      <small id="file_error" style="color: red;"></small>
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="btnsec">
+                      <div class="item">
+                        <a href="javascript:void(0)" class="cmnbtn hoveranim">
+                          <span>Cancel</span>
+                        </a>
+                      </div>
+                      <div class="item">
+                        <button type="button" class="cmnbtn hoveranim save-organization-reporting-process5"
+                          data-bs-toggle="collapse" data-bs-target="#biodiversityInnerAccordbiodiversityimpacts2"
+                          aria-expanded="false" aria-controls="biodiversityInnerAccordbiodiversityimpacts2">
+                          <span>save & continue</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item cmnBx mb-0">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#biodiversityInnerAccordbiodiversityimpacts2" aria-expanded="false"
+              aria-controls="biodiversityInnerAccordbiodiversityimpacts2">
+              <p class="mb-0">2.Pollution (introduction of substances that do not naturally occur in the habitat from point and non-point sources)			
+              </p>
+
+            </button>
+          </h2>
+          <div id="biodiversityInnerAccordbiodiversityimpacts2" class="accordion-collapse collapse"
+            data-bs-parent="#biodiversityInnerAccordbiodiversityimpacts">
+            <div class="cmnBx">
+
+              <form id="organizationProcess6" data-type="organization_process_step_6" method="POST" role="form"
+                enctype="multipart/form-data">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="formgroup">
+                      
+                      <input type="text" class="form-control" placeholder="Enter Your Response"
+                        id="organization_has_audited_response" name="organization_has_audited_response">
+                      <small id="organization_has_audited_response_error" style="color: red;"></small>
+                      <a href="" class="guideBxx" data-bs-toggle="modal"
+                                                            data-bs-target="#gidanceModal1">
+                                                            Guidance
+                                                            <div class="icon">
+                                                                <svg width="12" height="12" viewBox="0 0 12 12"
+                                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path
+                                                                        d="M6.58267 6.40568C6.59428 6.3979 6.61088 6.38868 6.63484 6.3776C6.71676 6.3397 6.7928 6.3189 6.90734 6.28755C6.97228 6.26978 7.0496 6.24861 7.1474 6.21903C7.36634 6.1528 7.68242 6.04117 7.93405 5.78126C8.20607 5.5003 8.33267 5.12405 8.33267 4.6713L8.33268 4.6655C8.33275 4.53031 8.33304 4.00145 8.03225 3.49456C7.69595 2.92783 7.0546 2.5 5.99934 2.5C5.4707 2.5 5.03512 2.62096 4.68569 2.83234C4.33733 3.04308 4.1069 3.32409 3.95719 3.5958C3.80929 3.86419 3.73807 4.1266 3.70295 4.3178C3.68516 4.41463 3.67599 4.49679 3.67122 4.55729C3.66884 4.58764 3.66753 4.61284 3.66683 4.63205C3.66648 4.64166 3.66627 4.64981 3.66615 4.65637L3.66604 4.66504L3.66601 4.66848L3.66601 4.66996L3.66601 4.67065L3.66602 4.6713C3.66602 4.99346 3.92717 5.25463 4.24934 5.25463C4.56974 5.25463 4.8298 4.99632 4.83265 4.6766L4.83266 4.67525C4.83281 4.6712 4.83326 4.66191 4.83429 4.64884C4.83637 4.6225 4.84086 4.5806 4.85042 4.52856C4.86999 4.42201 4.90814 4.28743 4.979 4.15883C5.04803 4.03355 5.14573 3.91757 5.28956 3.83057C5.43231 3.74421 5.65298 3.66667 5.99934 3.66667C6.69408 3.66667 6.92773 3.91939 7.02893 4.08993C7.16115 4.31274 7.16601 4.56962 7.16601 4.6713C7.16601 4.89737 7.10945 4.95573 7.09616 4.96945C7.06306 5.00364 6.99342 5.04673 6.80958 5.10234C6.77957 5.11142 6.74064 5.12213 6.69577 5.13448C6.54248 5.17665 6.31968 5.23795 6.14505 5.31873C5.87182 5.44511 5.58068 5.66724 5.44549 6.07615C5.42596 6.13522 5.41601 6.19704 5.41601 6.25926L5.41602 6.729C5.41602 7.05117 5.67718 7.3125 5.99935 7.3125C6.32152 7.3125 6.58268 7.05133 6.58268 6.72916L6.58267 6.40568Z"
+                                                                        fill="#8B8B8B" />
+                                                                    <path
+                                                                        d="M5.99935 9.5C6.32152 9.5 6.58268 9.23883 6.58268 8.91667C6.58268 8.5945 6.32152 8.33333 5.99935 8.33333C5.67718 8.33333 5.41602 8.5945 5.41602 8.91667C5.41602 9.23883 5.67718 9.5 5.99935 9.5Z"
+                                                                        fill="#8B8B8B" />
+                                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                        d="M5.99935 11.8333C9.22101 11.8333 11.8327 9.22166 11.8327 6C11.8327 2.77834 9.22101 0.166667 5.99935 0.166667C2.77769 0.166667 0.166016 2.77834 0.166016 6C0.166016 9.22166 2.77769 11.8333 5.99935 11.8333ZM5.99935 10.6667C8.57668 10.6667 10.666 8.57733 10.666 6C10.666 3.42267 8.57668 1.33333 5.99935 1.33333C3.42202 1.33333 1.33268 3.42267 1.33268 6C1.33268 8.57733 3.42202 10.6667 5.99935 10.6667Z"
+                                                                        fill="#8B8B8B" />
+                                                                </svg>
+
+                                                            </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="fileUpload">
+                      <label for="legal_file" class="upload-label" style="cursor: pointer;">
+                        Select File here
+                      </label>
+                      <p class="file-support-text">Files Supported: PDF, TEXT, DOC, DOCX, JPEG, PNG</p>
+                      <input type="file" multiple class="form-control multi-file-upload-input" id="legal_file"
+                        name="legal_file[]" data-file-list-id="file-list-1">
+                      <small id="file_error" style="color: red;"></small>
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="btnsec">
+                      <div class="item">
+                        <a href="javascript:void(0)" class="cmnbtn hoveranim">
+                          <span>Cancel</span>
+                        </a>
+                      </div>
+                      <div class="item">
+                        <button type="button" class="cmnbtn hoveranim save-organization-reporting-process5"
+                          data-bs-toggle="collapse" data-bs-target="#biodiversityInnerAccordbiodiversityimpacts3"
+                          aria-expanded="false" aria-controls="biodiversityInnerAccordbiodiversityimpacts3">
+                          <span>save & continue</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item cmnBx mb-0">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#biodiversityInnerAccordbiodiversityimpacts3" aria-expanded="false"
+              aria-controls="biodiversityInnerAccordbiodiversityimpacts3">
+              <p class="mb-0">3.Introduction of invasive species, pests, and pathogens			
+              </p>
+            </button>
+          </h2>
+          <div id="biodiversityInnerAccordbiodiversityimpacts3" class="accordion-collapse collapse"
+            data-bs-parent="#biodiversityInnerAccordbiodiversityimpacts">
+            <div class="cmnBx">
+
+              <form id="organizationProcess6" data-type="organization_process_step_6" method="POST" role="form"
+                enctype="multipart/form-data">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="formgroup">
+                      <input type="text" class="form-control" placeholder="Enter Your Response"
+                        id="organization_has_audited_response" name="organization_has_audited_response">
+                      <small id="organization_has_audited_response_error" style="color: red;"></small>
+                      <a href="" class="guideBxx" data-bs-toggle="modal"
+                                                            data-bs-target="#gidanceModal1">
+                                                            Guidance
+                                                            <div class="icon">
+                                                                <svg width="12" height="12" viewBox="0 0 12 12"
+                                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path
+                                                                        d="M6.58267 6.40568C6.59428 6.3979 6.61088 6.38868 6.63484 6.3776C6.71676 6.3397 6.7928 6.3189 6.90734 6.28755C6.97228 6.26978 7.0496 6.24861 7.1474 6.21903C7.36634 6.1528 7.68242 6.04117 7.93405 5.78126C8.20607 5.5003 8.33267 5.12405 8.33267 4.6713L8.33268 4.6655C8.33275 4.53031 8.33304 4.00145 8.03225 3.49456C7.69595 2.92783 7.0546 2.5 5.99934 2.5C5.4707 2.5 5.03512 2.62096 4.68569 2.83234C4.33733 3.04308 4.1069 3.32409 3.95719 3.5958C3.80929 3.86419 3.73807 4.1266 3.70295 4.3178C3.68516 4.41463 3.67599 4.49679 3.67122 4.55729C3.66884 4.58764 3.66753 4.61284 3.66683 4.63205C3.66648 4.64166 3.66627 4.64981 3.66615 4.65637L3.66604 4.66504L3.66601 4.66848L3.66601 4.66996L3.66601 4.67065L3.66602 4.6713C3.66602 4.99346 3.92717 5.25463 4.24934 5.25463C4.56974 5.25463 4.8298 4.99632 4.83265 4.6766L4.83266 4.67525C4.83281 4.6712 4.83326 4.66191 4.83429 4.64884C4.83637 4.6225 4.84086 4.5806 4.85042 4.52856C4.86999 4.42201 4.90814 4.28743 4.979 4.15883C5.04803 4.03355 5.14573 3.91757 5.28956 3.83057C5.43231 3.74421 5.65298 3.66667 5.99934 3.66667C6.69408 3.66667 6.92773 3.91939 7.02893 4.08993C7.16115 4.31274 7.16601 4.56962 7.16601 4.6713C7.16601 4.89737 7.10945 4.95573 7.09616 4.96945C7.06306 5.00364 6.99342 5.04673 6.80958 5.10234C6.77957 5.11142 6.74064 5.12213 6.69577 5.13448C6.54248 5.17665 6.31968 5.23795 6.14505 5.31873C5.87182 5.44511 5.58068 5.66724 5.44549 6.07615C5.42596 6.13522 5.41601 6.19704 5.41601 6.25926L5.41602 6.729C5.41602 7.05117 5.67718 7.3125 5.99935 7.3125C6.32152 7.3125 6.58268 7.05133 6.58268 6.72916L6.58267 6.40568Z"
+                                                                        fill="#8B8B8B" />
+                                                                    <path
+                                                                        d="M5.99935 9.5C6.32152 9.5 6.58268 9.23883 6.58268 8.91667C6.58268 8.5945 6.32152 8.33333 5.99935 8.33333C5.67718 8.33333 5.41602 8.5945 5.41602 8.91667C5.41602 9.23883 5.67718 9.5 5.99935 9.5Z"
+                                                                        fill="#8B8B8B" />
+                                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                        d="M5.99935 11.8333C9.22101 11.8333 11.8327 9.22166 11.8327 6C11.8327 2.77834 9.22101 0.166667 5.99935 0.166667C2.77769 0.166667 0.166016 2.77834 0.166016 6C0.166016 9.22166 2.77769 11.8333 5.99935 11.8333ZM5.99935 10.6667C8.57668 10.6667 10.666 8.57733 10.666 6C10.666 3.42267 8.57668 1.33333 5.99935 1.33333C3.42202 1.33333 1.33268 3.42267 1.33268 6C1.33268 8.57733 3.42202 10.6667 5.99935 10.6667Z"
+                                                                        fill="#8B8B8B" />
+                                                                </svg>
+
+                                                            </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="fileUpload">
+                      <label for="legal_file" class="upload-label" style="cursor: pointer;">
+                        Select File here
+                      </label>
+                      <p class="file-support-text">Files Supported: PDF, TEXT, DOC, DOCX, JPEG, PNG</p>
+                      <input type="file" multiple class="form-control multi-file-upload-input" id="legal_file"
+                        name="legal_file[]" data-file-list-id="file-list-1">
+                      <small id="file_error" style="color: red;"></small>
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="btnsec">
+                      <div class="item">
+                        <a href="javascript:void(0)" class="cmnbtn hoveranim">
+                          <span>Cancel</span>
+                        </a>
+                      </div>
+                      <div class="item">
+                        <button type="button" class="cmnbtn hoveranim save-organization-reporting-process5"
+                          data-bs-toggle="collapse" data-bs-target="#biodiversityInnerAccordbiodiversityimpacts4"
+                          aria-expanded="false" aria-controls="biodiversityInnerAccordbiodiversityimpacts4">
+                          <span>save & continue</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item cmnBx mb-0">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#biodiversityInnerAccordbiodiversityimpacts4" aria-expanded="false"
+              aria-controls="biodiversityInnerAccordbiodiversityimpacts4">
+              <p class="mb-0">4.Reduction of species			
+              </p>
+            </button>
+          </h2>
+          <div id="biodiversityInnerAccordbiodiversityimpacts4" class="accordion-collapse collapse"
+            data-bs-parent="#biodiversityInnerAccordbiodiversityimpacts">
+            <div class="cmnBx">
+
+              <form id="organizationProcess6" data-type="organization_process_step_6" method="POST" role="form"
+                enctype="multipart/form-data">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="formgroup">
+                      <input type="text" class="form-control" placeholder="Enter Your Response"
+                        id="organization_has_audited_response" name="organization_has_audited_response">
+                      <small id="organization_has_audited_response_error" style="color: red;"></small>
+                      <a href="" class="guideBxx" data-bs-toggle="modal"
+                                                            data-bs-target="#gidanceModal1">
+                                                            Guidance
+                                                            <div class="icon">
+                                                                <svg width="12" height="12" viewBox="0 0 12 12"
+                                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path
+                                                                        d="M6.58267 6.40568C6.59428 6.3979 6.61088 6.38868 6.63484 6.3776C6.71676 6.3397 6.7928 6.3189 6.90734 6.28755C6.97228 6.26978 7.0496 6.24861 7.1474 6.21903C7.36634 6.1528 7.68242 6.04117 7.93405 5.78126C8.20607 5.5003 8.33267 5.12405 8.33267 4.6713L8.33268 4.6655C8.33275 4.53031 8.33304 4.00145 8.03225 3.49456C7.69595 2.92783 7.0546 2.5 5.99934 2.5C5.4707 2.5 5.03512 2.62096 4.68569 2.83234C4.33733 3.04308 4.1069 3.32409 3.95719 3.5958C3.80929 3.86419 3.73807 4.1266 3.70295 4.3178C3.68516 4.41463 3.67599 4.49679 3.67122 4.55729C3.66884 4.58764 3.66753 4.61284 3.66683 4.63205C3.66648 4.64166 3.66627 4.64981 3.66615 4.65637L3.66604 4.66504L3.66601 4.66848L3.66601 4.66996L3.66601 4.67065L3.66602 4.6713C3.66602 4.99346 3.92717 5.25463 4.24934 5.25463C4.56974 5.25463 4.8298 4.99632 4.83265 4.6766L4.83266 4.67525C4.83281 4.6712 4.83326 4.66191 4.83429 4.64884C4.83637 4.6225 4.84086 4.5806 4.85042 4.52856C4.86999 4.42201 4.90814 4.28743 4.979 4.15883C5.04803 4.03355 5.14573 3.91757 5.28956 3.83057C5.43231 3.74421 5.65298 3.66667 5.99934 3.66667C6.69408 3.66667 6.92773 3.91939 7.02893 4.08993C7.16115 4.31274 7.16601 4.56962 7.16601 4.6713C7.16601 4.89737 7.10945 4.95573 7.09616 4.96945C7.06306 5.00364 6.99342 5.04673 6.80958 5.10234C6.77957 5.11142 6.74064 5.12213 6.69577 5.13448C6.54248 5.17665 6.31968 5.23795 6.14505 5.31873C5.87182 5.44511 5.58068 5.66724 5.44549 6.07615C5.42596 6.13522 5.41601 6.19704 5.41601 6.25926L5.41602 6.729C5.41602 7.05117 5.67718 7.3125 5.99935 7.3125C6.32152 7.3125 6.58268 7.05133 6.58268 6.72916L6.58267 6.40568Z"
+                                                                        fill="#8B8B8B" />
+                                                                    <path
+                                                                        d="M5.99935 9.5C6.32152 9.5 6.58268 9.23883 6.58268 8.91667C6.58268 8.5945 6.32152 8.33333 5.99935 8.33333C5.67718 8.33333 5.41602 8.5945 5.41602 8.91667C5.41602 9.23883 5.67718 9.5 5.99935 9.5Z"
+                                                                        fill="#8B8B8B" />
+                                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                        d="M5.99935 11.8333C9.22101 11.8333 11.8327 9.22166 11.8327 6C11.8327 2.77834 9.22101 0.166667 5.99935 0.166667C2.77769 0.166667 0.166016 2.77834 0.166016 6C0.166016 9.22166 2.77769 11.8333 5.99935 11.8333ZM5.99935 10.6667C8.57668 10.6667 10.666 8.57733 10.666 6C10.666 3.42267 8.57668 1.33333 5.99935 1.33333C3.42202 1.33333 1.33268 3.42267 1.33268 6C1.33268 8.57733 3.42202 10.6667 5.99935 10.6667Z"
+                                                                        fill="#8B8B8B" />
+                                                                </svg>
+
+                                                            </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="fileUpload">
+                      <label for="legal_file" class="upload-label" style="cursor: pointer;">
+                        Select File here
+                      </label>
+                      <p class="file-support-text">Files Supported: PDF, TEXT, DOC, DOCX, JPEG, PNG</p>
+                      <input type="file" multiple class="form-control multi-file-upload-input" id="legal_file"
+                        name="legal_file[]" data-file-list-id="file-list-1">
+                      <small id="file_error" style="color: red;"></small>
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="btnsec">
+                      <div class="item">
+                        <a href="javascript:void(0)" class="cmnbtn hoveranim">
+                          <span>Cancel</span>
+                        </a>
+                      </div>
+                      <div class="item">
+                        <button type="button" class="cmnbtn hoveranim save-organization-reporting-process5"
+                          data-bs-toggle="collapse" data-bs-target="#biodiversityInnerAccordbiodiversityimpacts5"
+                          aria-expanded="false" aria-controls="biodiversityInnerAccordbiodiversityimpacts5">
+                          <span>save & continue</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item cmnBx mb-0">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#biodiversityInnerAccordbiodiversityimpacts5" aria-expanded="false"
+              aria-controls="biodiversityInnerAccordbiodiversityimpacts5">
+              <p class="mb-0">5.Habitat conversion			
+              </p>
+
+            </button>
+          </h2>
+          <div id="biodiversityInnerAccordbiodiversityimpacts5" class="accordion-collapse collapse"
+            data-bs-parent="#biodiversityInnerAccordbiodiversityimpacts">
+            <div class="cmnBx">
+
+              <form id="organizationProcess6" data-type="organization_process_step_6" method="POST" role="form"
+                enctype="multipart/form-data">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="formgroup">
+                      <input type="text" class="form-control" placeholder="Enter Your Response"
+                        id="organization_has_audited_response" name="organization_has_audited_response">
+                      <small id="organization_has_audited_response_error" style="color: red;"></small>
+                      <a href="" class="guideBxx" data-bs-toggle="modal"
+                                                            data-bs-target="#gidanceModal1">
+                                                            Guidance
+                                                            <div class="icon">
+                                                                <svg width="12" height="12" viewBox="0 0 12 12"
+                                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path
+                                                                        d="M6.58267 6.40568C6.59428 6.3979 6.61088 6.38868 6.63484 6.3776C6.71676 6.3397 6.7928 6.3189 6.90734 6.28755C6.97228 6.26978 7.0496 6.24861 7.1474 6.21903C7.36634 6.1528 7.68242 6.04117 7.93405 5.78126C8.20607 5.5003 8.33267 5.12405 8.33267 4.6713L8.33268 4.6655C8.33275 4.53031 8.33304 4.00145 8.03225 3.49456C7.69595 2.92783 7.0546 2.5 5.99934 2.5C5.4707 2.5 5.03512 2.62096 4.68569 2.83234C4.33733 3.04308 4.1069 3.32409 3.95719 3.5958C3.80929 3.86419 3.73807 4.1266 3.70295 4.3178C3.68516 4.41463 3.67599 4.49679 3.67122 4.55729C3.66884 4.58764 3.66753 4.61284 3.66683 4.63205C3.66648 4.64166 3.66627 4.64981 3.66615 4.65637L3.66604 4.66504L3.66601 4.66848L3.66601 4.66996L3.66601 4.67065L3.66602 4.6713C3.66602 4.99346 3.92717 5.25463 4.24934 5.25463C4.56974 5.25463 4.8298 4.99632 4.83265 4.6766L4.83266 4.67525C4.83281 4.6712 4.83326 4.66191 4.83429 4.64884C4.83637 4.6225 4.84086 4.5806 4.85042 4.52856C4.86999 4.42201 4.90814 4.28743 4.979 4.15883C5.04803 4.03355 5.14573 3.91757 5.28956 3.83057C5.43231 3.74421 5.65298 3.66667 5.99934 3.66667C6.69408 3.66667 6.92773 3.91939 7.02893 4.08993C7.16115 4.31274 7.16601 4.56962 7.16601 4.6713C7.16601 4.89737 7.10945 4.95573 7.09616 4.96945C7.06306 5.00364 6.99342 5.04673 6.80958 5.10234C6.77957 5.11142 6.74064 5.12213 6.69577 5.13448C6.54248 5.17665 6.31968 5.23795 6.14505 5.31873C5.87182 5.44511 5.58068 5.66724 5.44549 6.07615C5.42596 6.13522 5.41601 6.19704 5.41601 6.25926L5.41602 6.729C5.41602 7.05117 5.67718 7.3125 5.99935 7.3125C6.32152 7.3125 6.58268 7.05133 6.58268 6.72916L6.58267 6.40568Z"
+                                                                        fill="#8B8B8B" />
+                                                                    <path
+                                                                        d="M5.99935 9.5C6.32152 9.5 6.58268 9.23883 6.58268 8.91667C6.58268 8.5945 6.32152 8.33333 5.99935 8.33333C5.67718 8.33333 5.41602 8.5945 5.41602 8.91667C5.41602 9.23883 5.67718 9.5 5.99935 9.5Z"
+                                                                        fill="#8B8B8B" />
+                                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                        d="M5.99935 11.8333C9.22101 11.8333 11.8327 9.22166 11.8327 6C11.8327 2.77834 9.22101 0.166667 5.99935 0.166667C2.77769 0.166667 0.166016 2.77834 0.166016 6C0.166016 9.22166 2.77769 11.8333 5.99935 11.8333ZM5.99935 10.6667C8.57668 10.6667 10.666 8.57733 10.666 6C10.666 3.42267 8.57668 1.33333 5.99935 1.33333C3.42202 1.33333 1.33268 3.42267 1.33268 6C1.33268 8.57733 3.42202 10.6667 5.99935 10.6667Z"
+                                                                        fill="#8B8B8B" />
+                                                                </svg>
+
+                                                            </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="fileUpload">
+                      <label for="legal_file" class="upload-label" style="cursor: pointer;">
+                        Select File here
+                      </label>
+                      <p class="file-support-text">Files Supported: PDF, TEXT, DOC, DOCX, JPEG, PNG</p>
+                      <input type="file" multiple class="form-control multi-file-upload-input" id="legal_file"
+                        name="legal_file[]" data-file-list-id="file-list-1">
+                      <small id="file_error" style="color: red;"></small>
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="btnsec">
+                      <div class="item">
+                        <a href="javascript:void(0)" class="cmnbtn hoveranim">
+                          <span>Cancel</span>
+                        </a>
+                      </div>
+                      <div class="item">
+                        <button type="button" class="cmnbtn hoveranim save-organization-reporting-process5"
+                          data-bs-toggle="collapse" data-bs-target="#biodiversityInnerAccordbiodiversityimpacts6"
+                          aria-expanded="false" aria-controls="biodiversityInnerAccordbiodiversityimpacts6">
+                          <span>save & continue</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item cmnBx mb-0">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#biodiversityInnerAccordbiodiversityimpacts6" aria-expanded="false"
+              aria-controls="biodiversityInnerAccordbiodiversityimpacts6">
+              <p class="mb-0">6.Changes in ecological processes outside the natural range of variation (such as salinity or changes in groundwater level)			
+              </p>
+
+            </button>
+          </h2>
+          <div id="biodiversityInnerAccordbiodiversityimpacts6" class="accordion-collapse collapse"
+            data-bs-parent="#biodiversityInnerAccordbiodiversityimpacts">
+            <div class="cmnBx">
+
+              <form id="organizationProcess6" data-type="organization_process_step_6" method="POST" role="form"
+                enctype="multipart/form-data">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="formgroup">
+                      <input type="text" class="form-control" placeholder="Enter Your Response"
+                        id="organization_has_audited_response" name="organization_has_audited_response">
+                      <small id="organization_has_audited_response_error" style="color: red;"></small>
+                      <a href="" class="guideBxx" data-bs-toggle="modal"
+                                                            data-bs-target="#gidanceModal1">
+                                                            Guidance
+                                                            <div class="icon">
+                                                                <svg width="12" height="12" viewBox="0 0 12 12"
+                                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path
+                                                                        d="M6.58267 6.40568C6.59428 6.3979 6.61088 6.38868 6.63484 6.3776C6.71676 6.3397 6.7928 6.3189 6.90734 6.28755C6.97228 6.26978 7.0496 6.24861 7.1474 6.21903C7.36634 6.1528 7.68242 6.04117 7.93405 5.78126C8.20607 5.5003 8.33267 5.12405 8.33267 4.6713L8.33268 4.6655C8.33275 4.53031 8.33304 4.00145 8.03225 3.49456C7.69595 2.92783 7.0546 2.5 5.99934 2.5C5.4707 2.5 5.03512 2.62096 4.68569 2.83234C4.33733 3.04308 4.1069 3.32409 3.95719 3.5958C3.80929 3.86419 3.73807 4.1266 3.70295 4.3178C3.68516 4.41463 3.67599 4.49679 3.67122 4.55729C3.66884 4.58764 3.66753 4.61284 3.66683 4.63205C3.66648 4.64166 3.66627 4.64981 3.66615 4.65637L3.66604 4.66504L3.66601 4.66848L3.66601 4.66996L3.66601 4.67065L3.66602 4.6713C3.66602 4.99346 3.92717 5.25463 4.24934 5.25463C4.56974 5.25463 4.8298 4.99632 4.83265 4.6766L4.83266 4.67525C4.83281 4.6712 4.83326 4.66191 4.83429 4.64884C4.83637 4.6225 4.84086 4.5806 4.85042 4.52856C4.86999 4.42201 4.90814 4.28743 4.979 4.15883C5.04803 4.03355 5.14573 3.91757 5.28956 3.83057C5.43231 3.74421 5.65298 3.66667 5.99934 3.66667C6.69408 3.66667 6.92773 3.91939 7.02893 4.08993C7.16115 4.31274 7.16601 4.56962 7.16601 4.6713C7.16601 4.89737 7.10945 4.95573 7.09616 4.96945C7.06306 5.00364 6.99342 5.04673 6.80958 5.10234C6.77957 5.11142 6.74064 5.12213 6.69577 5.13448C6.54248 5.17665 6.31968 5.23795 6.14505 5.31873C5.87182 5.44511 5.58068 5.66724 5.44549 6.07615C5.42596 6.13522 5.41601 6.19704 5.41601 6.25926L5.41602 6.729C5.41602 7.05117 5.67718 7.3125 5.99935 7.3125C6.32152 7.3125 6.58268 7.05133 6.58268 6.72916L6.58267 6.40568Z"
+                                                                        fill="#8B8B8B" />
+                                                                    <path
+                                                                        d="M5.99935 9.5C6.32152 9.5 6.58268 9.23883 6.58268 8.91667C6.58268 8.5945 6.32152 8.33333 5.99935 8.33333C5.67718 8.33333 5.41602 8.5945 5.41602 8.91667C5.41602 9.23883 5.67718 9.5 5.99935 9.5Z"
+                                                                        fill="#8B8B8B" />
+                                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                        d="M5.99935 11.8333C9.22101 11.8333 11.8327 9.22166 11.8327 6C11.8327 2.77834 9.22101 0.166667 5.99935 0.166667C2.77769 0.166667 0.166016 2.77834 0.166016 6C0.166016 9.22166 2.77769 11.8333 5.99935 11.8333ZM5.99935 10.6667C8.57668 10.6667 10.666 8.57733 10.666 6C10.666 3.42267 8.57668 1.33333 5.99935 1.33333C3.42202 1.33333 1.33268 3.42267 1.33268 6C1.33268 8.57733 3.42202 10.6667 5.99935 10.6667Z"
+                                                                        fill="#8B8B8B" />
+                                                                </svg>
+
+                                                            </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="fileUpload">
+                      <label for="legal_file" class="upload-label" style="cursor: pointer;">
+                        Select File here
+                      </label>
+                      <p class="file-support-text">Files Supported: PDF, TEXT, DOC, DOCX, JPEG, PNG</p>
+                      <input type="file" multiple class="form-control multi-file-upload-input" id="legal_file"
+                        name="legal_file[]" data-file-list-id="file-list-1">
+                      <small id="file_error" style="color: red;"></small>
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="btnsec">
+                      <div class="item">
+                        <a href="javascript:void(0)" class="cmnbtn hoveranim">
+                          <span>Cancel</span>
+                        </a>
+                      </div>
+                      <div class="item">
+                        <button type="button" class="cmnbtn hoveranim save-organization-reporting-process5"
+                          data-bs-toggle="collapse" data-bs-target="#biodiversityInnerAccordbiodiversityimpacts7"
+                          aria-expanded="false" aria-controls="biodiversityInnerAccodbiodiversityimpacts7">
+                          <span>save & continue</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item cmnBx mb-0">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#biodiversityInnerAccordbiodiversityimpacts7" aria-expanded="false"
+              aria-controls="biodiversityInnerAccordbiodiversityimpacts7">
+              <p class="mb-0">Significant direct and indirect positive and negative impacts with reference to the following
+                    <br>
+                    7.Species affected			
+			
+              </p>
+
+            </button>
+          </h2>
+          <div id="biodiversityInnerAccordbiodiversityimpacts7" class="accordion-collapse collapse"
+            data-bs-parent="#biodiversityInnerAccordbiodiversityimpacts">
+            <div class="cmnBx">
+
+              <form id="organizationProcess6" data-type="organization_process_step_6" method="POST" role="form"
+                enctype="multipart/form-data">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="formgroup">
+                      <input type="text" class="form-control" placeholder="Enter Your Response"
+                        id="organization_has_audited_response" name="organization_has_audited_response">
+                      <small id="organization_has_audited_response_error" style="color: red;"></small>
+                      <a href="" class="guideBxx" data-bs-toggle="modal"
+                                                            data-bs-target="#gidanceModal1">
+                                                            Guidance
+                                                            <div class="icon">
+                                                                <svg width="12" height="12" viewBox="0 0 12 12"
+                                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path
+                                                                        d="M6.58267 6.40568C6.59428 6.3979 6.61088 6.38868 6.63484 6.3776C6.71676 6.3397 6.7928 6.3189 6.90734 6.28755C6.97228 6.26978 7.0496 6.24861 7.1474 6.21903C7.36634 6.1528 7.68242 6.04117 7.93405 5.78126C8.20607 5.5003 8.33267 5.12405 8.33267 4.6713L8.33268 4.6655C8.33275 4.53031 8.33304 4.00145 8.03225 3.49456C7.69595 2.92783 7.0546 2.5 5.99934 2.5C5.4707 2.5 5.03512 2.62096 4.68569 2.83234C4.33733 3.04308 4.1069 3.32409 3.95719 3.5958C3.80929 3.86419 3.73807 4.1266 3.70295 4.3178C3.68516 4.41463 3.67599 4.49679 3.67122 4.55729C3.66884 4.58764 3.66753 4.61284 3.66683 4.63205C3.66648 4.64166 3.66627 4.64981 3.66615 4.65637L3.66604 4.66504L3.66601 4.66848L3.66601 4.66996L3.66601 4.67065L3.66602 4.6713C3.66602 4.99346 3.92717 5.25463 4.24934 5.25463C4.56974 5.25463 4.8298 4.99632 4.83265 4.6766L4.83266 4.67525C4.83281 4.6712 4.83326 4.66191 4.83429 4.64884C4.83637 4.6225 4.84086 4.5806 4.85042 4.52856C4.86999 4.42201 4.90814 4.28743 4.979 4.15883C5.04803 4.03355 5.14573 3.91757 5.28956 3.83057C5.43231 3.74421 5.65298 3.66667 5.99934 3.66667C6.69408 3.66667 6.92773 3.91939 7.02893 4.08993C7.16115 4.31274 7.16601 4.56962 7.16601 4.6713C7.16601 4.89737 7.10945 4.95573 7.09616 4.96945C7.06306 5.00364 6.99342 5.04673 6.80958 5.10234C6.77957 5.11142 6.74064 5.12213 6.69577 5.13448C6.54248 5.17665 6.31968 5.23795 6.14505 5.31873C5.87182 5.44511 5.58068 5.66724 5.44549 6.07615C5.42596 6.13522 5.41601 6.19704 5.41601 6.25926L5.41602 6.729C5.41602 7.05117 5.67718 7.3125 5.99935 7.3125C6.32152 7.3125 6.58268 7.05133 6.58268 6.72916L6.58267 6.40568Z"
+                                                                        fill="#8B8B8B" />
+                                                                    <path
+                                                                        d="M5.99935 9.5C6.32152 9.5 6.58268 9.23883 6.58268 8.91667C6.58268 8.5945 6.32152 8.33333 5.99935 8.33333C5.67718 8.33333 5.41602 8.5945 5.41602 8.91667C5.41602 9.23883 5.67718 9.5 5.99935 9.5Z"
+                                                                        fill="#8B8B8B" />
+                                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                        d="M5.99935 11.8333C9.22101 11.8333 11.8327 9.22166 11.8327 6C11.8327 2.77834 9.22101 0.166667 5.99935 0.166667C2.77769 0.166667 0.166016 2.77834 0.166016 6C0.166016 9.22166 2.77769 11.8333 5.99935 11.8333ZM5.99935 10.6667C8.57668 10.6667 10.666 8.57733 10.666 6C10.666 3.42267 8.57668 1.33333 5.99935 1.33333C3.42202 1.33333 1.33268 3.42267 1.33268 6C1.33268 8.57733 3.42202 10.6667 5.99935 10.6667Z"
+                                                                        fill="#8B8B8B" />
+                                                                </svg>
+
+                                                            </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="fileUpload">
+                      <label for="legal_file" class="upload-label" style="cursor: pointer;">
+                        Select File here
+                      </label>
+                      <p class="file-support-text">Files Supported: PDF, TEXT, DOC, DOCX, JPEG, PNG</p>
+                      <input type="file" multiple class="form-control multi-file-upload-input" id="legal_file"
+                        name="legal_file[]" data-file-list-id="file-list-1">
+                      <small id="file_error" style="color: red;"></small>
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="btnsec">
+                      <div class="item">
+                        <a href="javascript:void(0)" class="cmnbtn hoveranim">
+                          <span>Cancel</span>
+                        </a>
+                      </div>
+                      <div class="item">
+                        <button type="button" class="cmnbtn hoveranim save-organization-reporting-process5"
+                          data-bs-toggle="collapse" data-bs-target="#biodiversityInnerAccordbiodiversityimpacts8"
+                          aria-expanded="false" aria-controls="biodiversityInnerAccordbiodiversityimpacts8">
+                          <span>save & continue</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item cmnBx mb-0">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#biodiversityInnerAccordbiodiversityimpacts8" aria-expanded="false"
+              aria-controls="biodiversityInnerAccordbiodiversityimpacts8">
+              <p class="mb-0">8.Extent of areas impacted			
+
+              </p>
+
+            </button>
+          </h2>
+          <div id="biodiversityInnerAccordbiodiversityimpacts8" class="accordion-collapse collapse"
+            data-bs-parent="#biodiversityInnerAccordbiodiversityimpacts">
+            <div class="cmnBx">
+
+              <form id="organizationProcess6" data-type="organization_process_step_6" method="POST" role="form"
+                enctype="multipart/form-data">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="formgroup">
+                      <input type="text" class="form-control" placeholder="Enter Your Response"
+                        id="organization_has_audited_response" name="organization_has_audited_response">
+                      <small id="organization_has_audited_response_error" style="color: red;"></small>
+                      <a href="" class="guideBxx" data-bs-toggle="modal"
+                                                            data-bs-target="#gidanceModal1">
+                                                            Guidance
+                                                            <div class="icon">
+                                                                <svg width="12" height="12" viewBox="0 0 12 12"
+                                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path
+                                                                        d="M6.58267 6.40568C6.59428 6.3979 6.61088 6.38868 6.63484 6.3776C6.71676 6.3397 6.7928 6.3189 6.90734 6.28755C6.97228 6.26978 7.0496 6.24861 7.1474 6.21903C7.36634 6.1528 7.68242 6.04117 7.93405 5.78126C8.20607 5.5003 8.33267 5.12405 8.33267 4.6713L8.33268 4.6655C8.33275 4.53031 8.33304 4.00145 8.03225 3.49456C7.69595 2.92783 7.0546 2.5 5.99934 2.5C5.4707 2.5 5.03512 2.62096 4.68569 2.83234C4.33733 3.04308 4.1069 3.32409 3.95719 3.5958C3.80929 3.86419 3.73807 4.1266 3.70295 4.3178C3.68516 4.41463 3.67599 4.49679 3.67122 4.55729C3.66884 4.58764 3.66753 4.61284 3.66683 4.63205C3.66648 4.64166 3.66627 4.64981 3.66615 4.65637L3.66604 4.66504L3.66601 4.66848L3.66601 4.66996L3.66601 4.67065L3.66602 4.6713C3.66602 4.99346 3.92717 5.25463 4.24934 5.25463C4.56974 5.25463 4.8298 4.99632 4.83265 4.6766L4.83266 4.67525C4.83281 4.6712 4.83326 4.66191 4.83429 4.64884C4.83637 4.6225 4.84086 4.5806 4.85042 4.52856C4.86999 4.42201 4.90814 4.28743 4.979 4.15883C5.04803 4.03355 5.14573 3.91757 5.28956 3.83057C5.43231 3.74421 5.65298 3.66667 5.99934 3.66667C6.69408 3.66667 6.92773 3.91939 7.02893 4.08993C7.16115 4.31274 7.16601 4.56962 7.16601 4.6713C7.16601 4.89737 7.10945 4.95573 7.09616 4.96945C7.06306 5.00364 6.99342 5.04673 6.80958 5.10234C6.77957 5.11142 6.74064 5.12213 6.69577 5.13448C6.54248 5.17665 6.31968 5.23795 6.14505 5.31873C5.87182 5.44511 5.58068 5.66724 5.44549 6.07615C5.42596 6.13522 5.41601 6.19704 5.41601 6.25926L5.41602 6.729C5.41602 7.05117 5.67718 7.3125 5.99935 7.3125C6.32152 7.3125 6.58268 7.05133 6.58268 6.72916L6.58267 6.40568Z"
+                                                                        fill="#8B8B8B" />
+                                                                    <path
+                                                                        d="M5.99935 9.5C6.32152 9.5 6.58268 9.23883 6.58268 8.91667C6.58268 8.5945 6.32152 8.33333 5.99935 8.33333C5.67718 8.33333 5.41602 8.5945 5.41602 8.91667C5.41602 9.23883 5.67718 9.5 5.99935 9.5Z"
+                                                                        fill="#8B8B8B" />
+                                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                        d="M5.99935 11.8333C9.22101 11.8333 11.8327 9.22166 11.8327 6C11.8327 2.77834 9.22101 0.166667 5.99935 0.166667C2.77769 0.166667 0.166016 2.77834 0.166016 6C0.166016 9.22166 2.77769 11.8333 5.99935 11.8333ZM5.99935 10.6667C8.57668 10.6667 10.666 8.57733 10.666 6C10.666 3.42267 8.57668 1.33333 5.99935 1.33333C3.42202 1.33333 1.33268 3.42267 1.33268 6C1.33268 8.57733 3.42202 10.6667 5.99935 10.6667Z"
+                                                                        fill="#8B8B8B" />
+                                                                </svg>
+
+                                                            </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="fileUpload">
+                      <label for="legal_file" class="upload-label" style="cursor: pointer;">
+                        Select File here
+                      </label>
+                      <p class="file-support-text">Files Supported: PDF, TEXT, DOC, DOCX, JPEG, PNG</p>
+                      <input type="file" multiple class="form-control multi-file-upload-input" id="legal_file"
+                        name="legal_file[]" data-file-list-id="file-list-1">
+                      <small id="file_error" style="color: red;"></small>
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="btnsec">
+                      <div class="item">
+                        <a href="javascript:void(0)" class="cmnbtn hoveranim">
+                          <span>Cancel</span>
+                        </a>
+                      </div>
+                      <div class="item">
+                        <button type="button" class="cmnbtn hoveranim save-organization-reporting-process5"
+                          data-bs-toggle="collapse" data-bs-target="#biodiversityInnerAccordbiodiversityimpacts9"
+                          aria-expanded="false" aria-controls="biodiversityInnerAccordbiodiversityimpacts9">
+                          <span>save & continue</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item cmnBx mb-0">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#biodiversityInnerAccordbiodiversityimpacts9" aria-expanded="false"
+              aria-controls="biodiversityInnerAccordbiodiversityimpacts9">
+              <p class="mb-0">9.Duration of impacts			
+              </p>
+
+            </button>
+          </h2>
+          <div id="biodiversityInnerAccordbiodiversityimpacts9" class="accordion-collapse collapse"
+            data-bs-parent="#biodiversityInnerAccordbiodiversityimpacts">
+            <div class="cmnBx">
+
+              <form id="organizationProcess6" data-type="organization_process_step_6" method="POST" role="form"
+                enctype="multipart/form-data">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="formgroup">
+                      <input type="text" class="form-control" placeholder="Enter Your Response"
+                        id="organization_has_audited_response" name="organization_has_audited_response">
+                      <small id="organization_has_audited_response_error" style="color: red;"></small>
+                      <a href="" class="guideBxx" data-bs-toggle="modal"
+                                                            data-bs-target="#gidanceModal1">
+                                                            Guidance
+                                                            <div class="icon">
+                                                                <svg width="12" height="12" viewBox="0 0 12 12"
+                                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path
+                                                                        d="M6.58267 6.40568C6.59428 6.3979 6.61088 6.38868 6.63484 6.3776C6.71676 6.3397 6.7928 6.3189 6.90734 6.28755C6.97228 6.26978 7.0496 6.24861 7.1474 6.21903C7.36634 6.1528 7.68242 6.04117 7.93405 5.78126C8.20607 5.5003 8.33267 5.12405 8.33267 4.6713L8.33268 4.6655C8.33275 4.53031 8.33304 4.00145 8.03225 3.49456C7.69595 2.92783 7.0546 2.5 5.99934 2.5C5.4707 2.5 5.03512 2.62096 4.68569 2.83234C4.33733 3.04308 4.1069 3.32409 3.95719 3.5958C3.80929 3.86419 3.73807 4.1266 3.70295 4.3178C3.68516 4.41463 3.67599 4.49679 3.67122 4.55729C3.66884 4.58764 3.66753 4.61284 3.66683 4.63205C3.66648 4.64166 3.66627 4.64981 3.66615 4.65637L3.66604 4.66504L3.66601 4.66848L3.66601 4.66996L3.66601 4.67065L3.66602 4.6713C3.66602 4.99346 3.92717 5.25463 4.24934 5.25463C4.56974 5.25463 4.8298 4.99632 4.83265 4.6766L4.83266 4.67525C4.83281 4.6712 4.83326 4.66191 4.83429 4.64884C4.83637 4.6225 4.84086 4.5806 4.85042 4.52856C4.86999 4.42201 4.90814 4.28743 4.979 4.15883C5.04803 4.03355 5.14573 3.91757 5.28956 3.83057C5.43231 3.74421 5.65298 3.66667 5.99934 3.66667C6.69408 3.66667 6.92773 3.91939 7.02893 4.08993C7.16115 4.31274 7.16601 4.56962 7.16601 4.6713C7.16601 4.89737 7.10945 4.95573 7.09616 4.96945C7.06306 5.00364 6.99342 5.04673 6.80958 5.10234C6.77957 5.11142 6.74064 5.12213 6.69577 5.13448C6.54248 5.17665 6.31968 5.23795 6.14505 5.31873C5.87182 5.44511 5.58068 5.66724 5.44549 6.07615C5.42596 6.13522 5.41601 6.19704 5.41601 6.25926L5.41602 6.729C5.41602 7.05117 5.67718 7.3125 5.99935 7.3125C6.32152 7.3125 6.58268 7.05133 6.58268 6.72916L6.58267 6.40568Z"
+                                                                        fill="#8B8B8B" />
+                                                                    <path
+                                                                        d="M5.99935 9.5C6.32152 9.5 6.58268 9.23883 6.58268 8.91667C6.58268 8.5945 6.32152 8.33333 5.99935 8.33333C5.67718 8.33333 5.41602 8.5945 5.41602 8.91667C5.41602 9.23883 5.67718 9.5 5.99935 9.5Z"
+                                                                        fill="#8B8B8B" />
+                                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                        d="M5.99935 11.8333C9.22101 11.8333 11.8327 9.22166 11.8327 6C11.8327 2.77834 9.22101 0.166667 5.99935 0.166667C2.77769 0.166667 0.166016 2.77834 0.166016 6C0.166016 9.22166 2.77769 11.8333 5.99935 11.8333ZM5.99935 10.6667C8.57668 10.6667 10.666 8.57733 10.666 6C10.666 3.42267 8.57668 1.33333 5.99935 1.33333C3.42202 1.33333 1.33268 3.42267 1.33268 6C1.33268 8.57733 3.42202 10.6667 5.99935 10.6667Z"
+                                                                        fill="#8B8B8B" />
+                                                                </svg>
+
+                                                            </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="fileUpload">
+                      <label for="legal_file" class="upload-label" style="cursor: pointer;">
+                        Select File here
+                      </label>
+                      <p class="file-support-text">Files Supported: PDF, TEXT, DOC, DOCX, JPEG, PNG</p>
+                      <input type="file" multiple class="form-control multi-file-upload-input" id="legal_file"
+                        name="legal_file[]" data-file-list-id="file-list-1">
+                      <small id="file_error" style="color: red;"></small>
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="btnsec">
+                      <div class="item">
+                        <a href="javascript:void(0)" class="cmnbtn hoveranim">
+                          <span>Cancel</span>
+                        </a>
+                      </div>
+                      <div class="item">
+                        <button type="button" class="cmnbtn hoveranim save-organization-reporting-process5"
+                          data-bs-toggle="collapse" data-bs-target="#biodiversityInnerAccordbiodiversityimpacts10"
+                          aria-expanded="false" aria-controls="biodiversityInnerAccordbiodiversityimpacts10">
+                          <span>save & continue</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item cmnBx mb-0">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#biodiversityInnerAccordbiodiversityimpacts10" aria-expanded="false"
+              aria-controls="biodiversityInnerAccordbiodiversityimpacts10">
+              <p class="mb-0">10.Reversibility or irreversibility of the impacts			
+              </p>
+
+            </button>
+          </h2>
+          <div id="biodiversityInnerAccordbiodiversityimpacts10" class="accordion-collapse collapse"
+            data-bs-parent="#biodiversityInnerAccordbiodiversityimpacts">
+            <div class="cmnBx">
+
+              <form id="organizationProcess6" data-type="organization_process_step_6" method="POST" role="form"
+                enctype="multipart/form-data">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="formgroup">
+                      <input type="text" class="form-control" placeholder="Enter Your Response"
+                        id="organization_has_audited_response" name="organization_has_audited_response">
+                      <small id="organization_has_audited_response_error" style="color: red;"></small>
+                      <a href="" class="guideBxx" data-bs-toggle="modal"
+                                                            data-bs-target="#gidanceModal1">
+                                                            Guidance
+                                                            <div class="icon">
+                                                                <svg width="12" height="12" viewBox="0 0 12 12"
+                                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path
+                                                                        d="M6.58267 6.40568C6.59428 6.3979 6.61088 6.38868 6.63484 6.3776C6.71676 6.3397 6.7928 6.3189 6.90734 6.28755C6.97228 6.26978 7.0496 6.24861 7.1474 6.21903C7.36634 6.1528 7.68242 6.04117 7.93405 5.78126C8.20607 5.5003 8.33267 5.12405 8.33267 4.6713L8.33268 4.6655C8.33275 4.53031 8.33304 4.00145 8.03225 3.49456C7.69595 2.92783 7.0546 2.5 5.99934 2.5C5.4707 2.5 5.03512 2.62096 4.68569 2.83234C4.33733 3.04308 4.1069 3.32409 3.95719 3.5958C3.80929 3.86419 3.73807 4.1266 3.70295 4.3178C3.68516 4.41463 3.67599 4.49679 3.67122 4.55729C3.66884 4.58764 3.66753 4.61284 3.66683 4.63205C3.66648 4.64166 3.66627 4.64981 3.66615 4.65637L3.66604 4.66504L3.66601 4.66848L3.66601 4.66996L3.66601 4.67065L3.66602 4.6713C3.66602 4.99346 3.92717 5.25463 4.24934 5.25463C4.56974 5.25463 4.8298 4.99632 4.83265 4.6766L4.83266 4.67525C4.83281 4.6712 4.83326 4.66191 4.83429 4.64884C4.83637 4.6225 4.84086 4.5806 4.85042 4.52856C4.86999 4.42201 4.90814 4.28743 4.979 4.15883C5.04803 4.03355 5.14573 3.91757 5.28956 3.83057C5.43231 3.74421 5.65298 3.66667 5.99934 3.66667C6.69408 3.66667 6.92773 3.91939 7.02893 4.08993C7.16115 4.31274 7.16601 4.56962 7.16601 4.6713C7.16601 4.89737 7.10945 4.95573 7.09616 4.96945C7.06306 5.00364 6.99342 5.04673 6.80958 5.10234C6.77957 5.11142 6.74064 5.12213 6.69577 5.13448C6.54248 5.17665 6.31968 5.23795 6.14505 5.31873C5.87182 5.44511 5.58068 5.66724 5.44549 6.07615C5.42596 6.13522 5.41601 6.19704 5.41601 6.25926L5.41602 6.729C5.41602 7.05117 5.67718 7.3125 5.99935 7.3125C6.32152 7.3125 6.58268 7.05133 6.58268 6.72916L6.58267 6.40568Z"
+                                                                        fill="#8B8B8B" />
+                                                                    <path
+                                                                        d="M5.99935 9.5C6.32152 9.5 6.58268 9.23883 6.58268 8.91667C6.58268 8.5945 6.32152 8.33333 5.99935 8.33333C5.67718 8.33333 5.41602 8.5945 5.41602 8.91667C5.41602 9.23883 5.67718 9.5 5.99935 9.5Z"
+                                                                        fill="#8B8B8B" />
+                                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                        d="M5.99935 11.8333C9.22101 11.8333 11.8327 9.22166 11.8327 6C11.8327 2.77834 9.22101 0.166667 5.99935 0.166667C2.77769 0.166667 0.166016 2.77834 0.166016 6C0.166016 9.22166 2.77769 11.8333 5.99935 11.8333ZM5.99935 10.6667C8.57668 10.6667 10.666 8.57733 10.666 6C10.666 3.42267 8.57668 1.33333 5.99935 1.33333C3.42202 1.33333 1.33268 3.42267 1.33268 6C1.33268 8.57733 3.42202 10.6667 5.99935 10.6667Z"
+                                                                        fill="#8B8B8B" />
+                                                                </svg>
+
+                                                            </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="fileUpload">
+                      <label for="legal_file" class="upload-label" style="cursor: pointer;">
+                        Select File here
+                      </label>
+                      <p class="file-support-text">Files Supported: PDF, TEXT, DOC, DOCX, JPEG, PNG</p>
+                      <input type="file" multiple class="form-control multi-file-upload-input" id="legal_file"
+                        name="legal_file[]" data-file-list-id="file-list-1">
+                      <small id="file_error" style="color: red;"></small>
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="btnsec">
+                      <div class="item">
+                        <a href="javascript:void(0)" class="cmnbtn hoveranim">
+                          <span>Cancel</span>
+                        </a>
+                      </div>
+                      <div class="item">
+                        <button type="button" class="cmnbtn hoveranim save-organization-reporting-process5"
+                          data-bs-toggle="collapse" data-bs-target="#reportAccord3"
+                          aria-expanded="false" aria-controls="reportAccord3">
+                          <span>save & continue</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+       
+      </div>
+    </div>
+  </div>
+</div>
